@@ -1,0 +1,12 @@
+.env
+.Rhistory
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+data/raw/earnings/*.json
+data/raw/earnings/*.csv
+data/raw/prices/*.csv
+data/raw/prices/*.json
+data/processed/*.csv
+figures/*.png
+outputs/*.csv
