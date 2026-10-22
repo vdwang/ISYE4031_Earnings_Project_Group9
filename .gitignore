@@ -10,3 +10,11 @@ data/raw/prices/*.json
 data/processed/*.csv
 figures/*.png
 outputs/*.csv
+tmp/
+output/*.zip
+outputs/milestone2/baseline_predictions.csv
+outputs/milestone2/training_influence.csv
+
+# Local chat context and the superseded PDF-only report generator.
+CONTEXT.md
+reports/build_report.py

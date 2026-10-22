@@ -1,0 +1,9 @@
+pandas==2.3.3
+numpy==2.5.3
+requests==2.34.2
+yfinance==1.7.0
+matplotlib==3.11.2
+scikit-learn==1.9.1
+python-dotenv==1.2.3
+notebook==7.6.3
+ipykernel==7.4.0

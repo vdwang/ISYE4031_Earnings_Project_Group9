@@ -1,0 +1,17 @@
+variable,max_absolute_error,events_checked
+earnings_surprise_pct,0.0,400
+reported_eps,0.0,400
+estimated_eps,0.0,400
+earnings_surprise,0.0,400
+reaction_day_return,9.8879238130678e-17,400
+abnormal_volume,4.440892098500626e-16,400
+return_5d_before,9.71445146547012e-17,400
+return_20d_before,9.8879238130678e-17,400
+volatility_20d,9.974659986866641e-17,400
+spy_return_5d_before,9.974659986866641e-17,400
+previous_earnings_surprise_pct,0.0,400
+future_5d_return,9.974659986866641e-17,400
+market_adjusted_5d_return,9.8879238130678e-17,400
+spy_future_5d_return,9.93129189996722e-17,400
+positive_return,0.0,400
+positive_return_amount,9.974659986866641e-17,400

@@ -1,0 +1,85 @@
+{
+  "python": "3.12.7",
+  "packages": {
+    "pandas": "2.3.3",
+    "numpy": "2.5.3",
+    "requests": "2.34.2",
+    "yfinance": "1.7.0",
+    "matplotlib": "3.11.2",
+    "scikit-learn": "1.9.1",
+    "python-dotenv": "1.2.3",
+    "notebook": "7.6.3",
+    "ipykernel": "7.4.0"
+  },
+  "quality": {
+    "raw_records": 1105,
+    "exact_raw_duplicates": 0,
+    "invalid_reported_dates": 0,
+    "outside_event_window": 705,
+    "in_window_events": 400,
+    "modeling_events": 400,
+    "duplicate_event_keys": 0,
+    "missing_required_predictor_cells": 0,
+    "nonfinite_modeling_values": 0,
+    "invalid_timing_rows": 0,
+    "overlapping_target_window_pairs": 597,
+    "same_ticker_overlap_pairs": 0,
+    "same_reaction_date_pairs": 94,
+    "events_with_shared_reaction_date": 148,
+    "eps_identity_max_error": 6.661338147750939e-16,
+    "nonpositive_estimated_eps_events": 2,
+    "abs_surprise_over_100_pct_events": 7
+  },
+  "formula_max_error": 4.440892098500626e-16,
+  "model_features": [
+    "earnings_surprise_pct",
+    "reported_eps",
+    "estimated_eps",
+    "reaction_day_return",
+    "abnormal_volume",
+    "return_5d_before",
+    "return_20d_before",
+    "volatility_20d",
+    "spy_return_5d_before",
+    "previous_earnings_surprise_pct"
+  ],
+  "omitted_redundant_feature": "earnings_surprise",
+  "split_counts": {
+    "train": 280,
+    "validation": 80,
+    "test": 40
+  },
+  "purged_or_outside_split_events": 0,
+  "raw_return_summary": {
+    "mean": 0.0024201213853449646,
+    "median": 0.0031912597757216997,
+    "sd": 0.040852886214057846,
+    "min": -0.221961586099052,
+    "max": 0.1349592833961874,
+    "positive_n": 223
+  },
+  "diagnostics": {
+    "future_5d_return": {
+      "design_rank": 11,
+      "design_columns": 11,
+      "scaled_design_condition_number": 10.851985278750877,
+      "high_leverage_count": 28,
+      "cooks_above_4_over_n": 17,
+      "largest_cooks_ticker": "AMZN",
+      "largest_cooks_date": "2022-04-28",
+      "largest_cooks_distance": 0.1908499086778551,
+      "training_mean": 0.0015389505324367569
+    },
+    "market_adjusted_5d_return": {
+      "design_rank": 11,
+      "design_columns": 11,
+      "scaled_design_condition_number": 10.851985278750877,
+      "high_leverage_count": 28,
+      "cooks_above_4_over_n": 18,
+      "largest_cooks_ticker": "AMZN",
+      "largest_cooks_date": "2022-04-28",
+      "largest_cooks_distance": 0.16493189729453986,
+      "training_mean": -0.0021342300978598456
+    }
+  }
+}

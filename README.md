@@ -1,5 +1,15 @@
 # ISYE 4031 post-earnings returns project
 
+## Milestone 2
+
+The completed pilot analysis, baseline comparisons, diagnostics, four-page report,
+and reproducibility instructions are described in [MILESTONE2_README.md](MILESTONE2_README.md).
+After building the dataset, run `python run_milestone2.py` or open
+`notebooks/02_milestone2_analysis.ipynb`. It uses the raw signed return as the primary
+target and SPY-adjusted return as a secondary analysis. Both are compared with
+training-mean and zero forecasts. The 2025 results are exploratory and have been
+inspected, so they cannot serve as an untouched test for subsequent tuning.
+
 ## Question
 
 After the initial market reaction to a quarterly earnings announcement, can information about earnings, price, volume, momentum, and volatility predict a stock's signed return over the following five trading days? `positive_return` and `positive_return_amount` permit a focused analysis of upward moves without discarding negative returns.

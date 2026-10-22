@@ -1,0 +1,167 @@
+[
+  {
+    "path": "data/raw/earnings/AAPL.json",
+    "sha256": "74e5605cb5020e211897f6d206592ccb2d62fc365d41cbb9c257f374e0134d3c",
+    "bytes": 33719
+  },
+  {
+    "path": "data/raw/earnings/AMZN.json",
+    "sha256": "1af121bcd7294656b8918272279f7502114b832752a5d806563e0f49555b4ffe",
+    "bytes": 32116
+  },
+  {
+    "path": "data/raw/earnings/GOOGL.json",
+    "sha256": "fd48c77d271989d1fa8f9bbfbd60cd8d83ceb41af699f59215bb98c9119e20ae",
+    "bytes": 24803
+  },
+  {
+    "path": "data/raw/earnings/JNJ.json",
+    "sha256": "e75c1baaf3304f99a0604f4a7d67df6414a62d1f6e3cebf13483443cdcaa42a3",
+    "bytes": 33538
+  },
+  {
+    "path": "data/raw/earnings/JPM.json",
+    "sha256": "1dd3710ab07b2c49861315159153c868b6c65dd9abfcab1d1b95024ed3fb7476",
+    "bytes": 33699
+  },
+  {
+    "path": "data/raw/earnings/META.json",
+    "sha256": "fb8c6a9eda90aa5926e584e3c2a378e89a4ac75edb870a12665af61160179df8",
+    "bytes": 16144
+  },
+  {
+    "path": "data/raw/earnings/MSFT.json",
+    "sha256": "2f7e78c51f506e975644a95d9f00f0b29d8160e8838303bca6070b61f2bd5cb5",
+    "bytes": 33684
+  },
+  {
+    "path": "data/raw/earnings/NVDA.json",
+    "sha256": "163b70380f024d5706afe901e23328e28d7aa12b194e4180b38f726699f66b13",
+    "bytes": 30492
+  },
+  {
+    "path": "data/raw/earnings/WMT.json",
+    "sha256": "ea506a97319743fc20a56c0ea76316e5716611f9eaaa13d2165f98351b41c97d",
+    "bytes": 33368
+  },
+  {
+    "path": "data/raw/earnings/XOM.json",
+    "sha256": "9e8e777b9ae2b04e5d7c197e68100ca2648e450ea30056b1775b47fb86b148c0",
+    "bytes": 33735
+  },
+  {
+    "path": "data/raw/prices/AAPL.json",
+    "sha256": "6b42bf6ab34d9d5b04612afd6c2df343527eb0337fbd1e2ba384f5b4b0d19bbc",
+    "bytes": 84
+  },
+  {
+    "path": "data/raw/prices/AMZN.json",
+    "sha256": "cfa5ed48d390d270ae59006a2902f88e597d6053412214b70b3d388863627097",
+    "bytes": 84
+  },
+  {
+    "path": "data/raw/prices/GOOGL.json",
+    "sha256": "e519c87ed0cd9241b249d264a18fe0dc60a6e73dc21a52730c89ba374d0998f5",
+    "bytes": 85
+  },
+  {
+    "path": "data/raw/prices/JNJ.json",
+    "sha256": "1aee7a0264c315d1052ac1475be904522aeed27385472db7d88b53c2407e1c25",
+    "bytes": 83
+  },
+  {
+    "path": "data/raw/prices/JPM.json",
+    "sha256": "44f054de3d4121b55bc996affbe1fe11727992c5f3d3ddf14685f85e0276ed0e",
+    "bytes": 83
+  },
+  {
+    "path": "data/raw/prices/META.json",
+    "sha256": "c94a6b50e5ae6964f10f9614268aee4d8b1d8a84f922dec8fbbfe44139b72343",
+    "bytes": 84
+  },
+  {
+    "path": "data/raw/prices/MSFT.json",
+    "sha256": "813b834ea2040422940bc049f8f28befb142f6a7e1f67053b1012bcd9673d465",
+    "bytes": 84
+  },
+  {
+    "path": "data/raw/prices/NVDA.json",
+    "sha256": "3a858597c8b67a4a453d2b491182ddd36f3b69ebdcbf5dbc6d20dae59ddb0a6f",
+    "bytes": 84
+  },
+  {
+    "path": "data/raw/prices/SPY.json",
+    "sha256": "1fe6a52287adb25be875f9eb60b188e6ae1cfbba9f3a1f552a2dee9f5ec57745",
+    "bytes": 83
+  },
+  {
+    "path": "data/raw/prices/WMT.json",
+    "sha256": "ccb52364cac224865ad2bae795debdc626d26bec18dab96d561b8f6f042cbe47",
+    "bytes": 83
+  },
+  {
+    "path": "data/raw/prices/XOM.json",
+    "sha256": "6a0f35902b217a89420b8babf6509b7b1ba5a1757535755088fbe0a79df7ac0b",
+    "bytes": 83
+  },
+  {
+    "path": "data/raw/earnings/quarterly_earnings.csv",
+    "sha256": "3988b707cf4eeb892ba09c628927b61bbde51a64b1147769e457fca5c70bc9ed",
+    "bytes": 55110
+  },
+  {
+    "path": "data/raw/prices/AAPL.csv",
+    "sha256": "3a65827e6959ddfd9001c5d451d1fea2741d3e5d650291630a0f9e6dde6fc9a5",
+    "bytes": 297550
+  },
+  {
+    "path": "data/raw/prices/AMZN.csv",
+    "sha256": "645ffd133fcaa21ce2e0eda78b905415b8a55c1c6ed6469bd03c7fafc0703a81",
+    "bytes": 295160
+  },
+  {
+    "path": "data/raw/prices/GOOGL.csv",
+    "sha256": "cb08f25e888b495c5b67e0801e5188f8ee89d506c1d379ddd6ff5b59232a5774",
+    "bytes": 300031
+  },
+  {
+    "path": "data/raw/prices/JNJ.csv",
+    "sha256": "8c392e37a585c1baa56dd5802ca27ae4fe806004cc3036c2e1d3e34375e14f84",
+    "bytes": 292195
+  },
+  {
+    "path": "data/raw/prices/JPM.csv",
+    "sha256": "7f847453e91855ef94f8df30eadd4229d40afa58a2992ac4d2ed37e4eedf943a",
+    "bytes": 292825
+  },
+  {
+    "path": "data/raw/prices/META.csv",
+    "sha256": "6a5fe9313558e9b5bb1d73d8b3bcea078c105e7bc15663ad9935d3fc57ae2749",
+    "bytes": 292777
+  },
+  {
+    "path": "data/raw/prices/MSFT.csv",
+    "sha256": "d0b22a8b7b16a977a1392b08b24e878c74ba1f5b4cdb3575441236069dfd1d64",
+    "bytes": 294344
+  },
+  {
+    "path": "data/raw/prices/NVDA.csv",
+    "sha256": "0c22671c0f8620db4e9f560ffd1631efff41c6290c87c814f2e086ec58e19d68",
+    "bytes": 303879
+  },
+  {
+    "path": "data/raw/prices/SPY.csv",
+    "sha256": "8e9bfcb6f9ee9108499afc32e94916bc8a3f4880b2b09a5c214d8903e48551ec",
+    "bytes": 293448
+  },
+  {
+    "path": "data/raw/prices/WMT.csv",
+    "sha256": "69ea8d16da2a09d1356723fd0bd371b3fbbe16ef0d3a9635748682478a3725a9",
+    "bytes": 297397
+  },
+  {
+    "path": "data/raw/prices/XOM.csv",
+    "sha256": "217b710afd4c5451452e74278c001c951e6114e8c323747b9f7aaf127054cda7",
+    "bytes": 292019
+  }
+]
