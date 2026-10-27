@@ -50,6 +50,15 @@ class EventTimingTests(unittest.TestCase):
             self.assertAlmostEqual(first.loc[0, name], second.loc[0, name])
         self.assertNotEqual(first.loc[0, "future_5d_return"], second.loc[0, "future_5d_return"])
 
+    def test_research_window_can_include_earlier_events_without_changing_default(self) -> None:
+        default, _ = build_events(self.earnings, {"TEST": self.stock, "SPY": self.spy})
+        extended, _ = build_events(self.earnings, {"TEST": self.stock, "SPY": self.spy},
+            event_start="2015-01-01", event_end="2016-12-31")
+        self.assertEqual(len(default), 1)
+        self.assertEqual(len(extended), 2)
+        self.assertEqual(extended.iloc[1]["previous_earnings_surprise_pct"], 8)
+        self.assertAlmostEqual(default.iloc[0]["future_5d_return"], extended.iloc[1]["future_5d_return"])
+
 
 if __name__ == "__main__":
     unittest.main()

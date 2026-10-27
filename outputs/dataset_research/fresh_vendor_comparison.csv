@@ -1,0 +1,6 @@
+variable,matched_events,unmatched_events,changed_above_1e_minus_8,max_abs_difference_percentage_points
+future_5d_return,400,0,304,6.905838239000539e-05
+spy_future_5d_return,400,0,338,7.652985111981925e-05
+market_adjusted_5d_return,400,0,379,0.00010090174445975819
+reaction_day_return,400,0,305,7.968400551998378e-05
+return_20d_before,400,0,301,9.052478464992297e-05

@@ -1,5 +1,11 @@
 # Data expansion and informativeness review
 
+Update on the dataset research branch: a separate longer-price-history pilot
+has now been downloaded and audited. See
+[Dataset quality and expansion findings](DATASET_QUALITY_RESEARCH.md) for the
+629-event 2010–2025 candidate and comparison of other sources. The original
+Milestone 2 analysis below remains the 400-event snapshot.
+
 ## Current study and the first expansion step
 
 The primary model remains the 400-event, ten-company 2016-2025 study. Its

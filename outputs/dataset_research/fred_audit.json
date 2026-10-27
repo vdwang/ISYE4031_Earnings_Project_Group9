@@ -1,0 +1,13 @@
+{
+  "source": "FRED VIXCLS",
+  "url": "https://fred.stlouisfed.org/series/VIXCLS",
+  "rows": 8087,
+  "first_date": "1995-01-03",
+  "last_date": "2025-12-31",
+  "missing_values": 259,
+  "nonmissing_values": 7828,
+  "sha256": "204306fbc6d464e13c87959c4797ed40cd81bba986463c2ea88d2eddd9430b08",
+  "role": "Market-regime supplement, not earnings-event replacement",
+  "timing_rule": "Use the previous available observation date, strictly before reaction day; publication-time/vintage audit still required",
+  "primary_model_uses_source": false
+}

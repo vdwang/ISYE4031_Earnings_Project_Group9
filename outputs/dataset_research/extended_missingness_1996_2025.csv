@@ -1,0 +1,14 @@
+variable,missing_count
+earnings_surprise_pct,12
+reported_eps,0
+estimated_eps,12
+earnings_surprise,0
+reaction_day_return,0
+abnormal_volume,1
+return_5d_before,0
+return_20d_before,1
+volatility_20d,1
+spy_return_5d_before,0
+previous_earnings_surprise_pct,22
+future_5d_return,0
+spy_future_5d_return,0

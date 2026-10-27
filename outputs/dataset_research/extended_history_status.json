@@ -1,0 +1,13 @@
+{
+  "audit_date": "2026-10-27",
+  "source": "Existing Alpha Vantage caches plus separate new Yahoo/yfinance price downloads",
+  "primary_data_unchanged": true,
+  "models_refitted": false,
+  "limitations": [
+    "Current-company selection remains",
+    "Exact earnings release times remain unverified",
+    "Vendor values are retrospective",
+    "Complete cases do not guarantee error-free financial observations",
+    "Expanded 2016-2025 targets may differ after fresh vendor adjustments; compare rather than silently replace"
+  ]
+}

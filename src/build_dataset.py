@@ -13,7 +13,8 @@ EVENT_COLUMNS = [
 ]
 
 
-def build_events(earnings: pd.DataFrame, prices: dict[str, pd.DataFrame]) -> tuple[pd.DataFrame, dict[str, int]]:
+def build_events(earnings: pd.DataFrame, prices: dict[str, pd.DataFrame],
+                 event_start: str = EVENT_START, event_end: str = EVENT_END) -> tuple[pd.DataFrame, dict[str, int]]:
     raw_count = len(earnings)
     work = earnings.copy()
     work = work.drop_duplicates()
@@ -23,8 +24,8 @@ def build_events(earnings: pd.DataFrame, prices: dict[str, pd.DataFrame]) -> tup
         work[original] = numeric(work[original])
     work = work.sort_values(["ticker", "reported_date", "fiscal_date_ending"], kind="stable")
     work["previous_earnings_surprise_pct"] = work.groupby("ticker")["surprisePercentage"].shift(1)
-    # Keep pre-2016 records long enough to supply the first in-window lag.
-    work = work.loc[work["reported_date"].between(EVENT_START, EVENT_END)].copy()
+    # Keep earlier records long enough to supply the first in-window lag.
+    work = work.loc[work["reported_date"].between(event_start, event_end)].copy()
 
     prepared = {ticker: prepare_prices(frame) for ticker, frame in prices.items()}
     spy = prepared["SPY"]

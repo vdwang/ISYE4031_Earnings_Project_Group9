@@ -1,0 +1,115 @@
+[
+  {
+    "ref": "adarsh1077/epsclassification",
+    "url": "https://www.kaggle.com/datasets/adarsh1077/epsclassification",
+    "version": 1,
+    "title": "EPS Beat Prediction \u2014 S&P 500 Earnings (2020-2026)",
+    "license": "CC0: Public Domain",
+    "sample_audited": true,
+    "primary_model_uses_source": false,
+    "file": "earnings_features_clean (1).csv",
+    "rows": 11282,
+    "columns": [
+      "earnings_date",
+      "ticker",
+      "beat",
+      "beat_streak",
+      "historical_beat_rate",
+      "avg_surprise_4q",
+      "estimate_trend",
+      "sector",
+      "momentum_30d",
+      "volatility_30d"
+    ],
+    "exact_duplicate_rows": 2,
+    "missing_cells": {
+      "earnings_date": 0,
+      "ticker": 0,
+      "beat": 0,
+      "beat_streak": 0,
+      "historical_beat_rate": 0,
+      "avg_surprise_4q": 0,
+      "estimate_trend": 0,
+      "sector": 0,
+      "momentum_30d": 0,
+      "volatility_30d": 0
+    },
+    "sha256": "9d698b04a8d4f568ab92d2ddc40c978bfae79637e1aff979d24a8828af3b310f",
+    "date_columns": {
+      "earnings_date": {
+        "min": "2020-04-30 11:00:00+00:00",
+        "max": "2026-03-27 13:00:00+00:00",
+        "invalid_count": 0
+      }
+    },
+    "companies": 501,
+    "decision": "Needs target/provenance review; sample audited, not approved for modeling"
+  },
+  {
+    "ref": "anthonypm/nasdaq-earnings-calendar-auto-updating",
+    "url": "https://www.kaggle.com/datasets/anthonypm/nasdaq-earnings-calendar-auto-updating",
+    "version": 248,
+    "title": "NASDAQ Earnings Calendar (Auto-Updating)",
+    "license": "Apache 2.0",
+    "sample_audited": true,
+    "primary_model_uses_source": false,
+    "file": "simple_earnings_calendar.csv",
+    "rows": 2603,
+    "columns": [
+      "earnings_date",
+      "lastYearRptDt",
+      "lastYearEPS",
+      "time",
+      "symbol",
+      "name",
+      "marketCap",
+      "fiscalQuarterEnding",
+      "epsForecast",
+      "noOfEsts"
+    ],
+    "exact_duplicate_rows": 0,
+    "missing_cells": {
+      "earnings_date": 0,
+      "lastYearRptDt": 411,
+      "lastYearEPS": 125,
+      "time": 0,
+      "symbol": 0,
+      "name": 0,
+      "marketCap": 4,
+      "fiscalQuarterEnding": 0,
+      "epsForecast": 410,
+      "noOfEsts": 72
+    },
+    "sha256": "ff34adec5660e362caad6ff469fd06d8059eb679bf5212085b97bb70f917d2f2",
+    "date_columns": {
+      "earnings_date": {
+        "min": "2026-10-28 00:00:00+00:00",
+        "max": "2026-11-10 00:00:00+00:00",
+        "invalid_count": 0
+      }
+    },
+    "companies": 2603,
+    "decision": "Needs target/provenance review; sample audited, not approved for modeling"
+  },
+  {
+    "ref": "kaziaishikuzzaman/earningssignal-earnings-call-tone-and-guidance",
+    "url": "https://www.kaggle.com/datasets/kaziaishikuzzaman/earningssignal-earnings-call-tone-and-guidance",
+    "version": 1,
+    "title": "EarningsSignal: Earnings Call Tone & Guidance",
+    "license": "Attribution 4.0 International (CC BY 4.0)",
+    "sample_audited": false,
+    "primary_model_uses_source": false,
+    "publisher_declares_synthetic": true,
+    "decision": "Reject as real financial observations: publisher explicitly describes synthetic data"
+  },
+  {
+    "ref": "hexsyro/earnings-and-corporate-news-reactions",
+    "url": "https://www.kaggle.com/datasets/hexsyro/earnings-and-corporate-news-reactions",
+    "version": 576,
+    "title": "Earnings and Corporate News Reactions",
+    "license": "Other (specified in description)",
+    "sample_audited": false,
+    "primary_model_uses_source": false,
+    "decision": "Not an earnings-event table; optional social-text supplement with first-seen/engagement timing and license checks"
+  }
+]

@@ -9,6 +9,8 @@ data/raw/prices/*.csv
 data/raw/prices/*.json
 data/processed/*.csv
 data/raw/kaggle_candidate/
+data/raw/research/
+data/processed/research/
 figures/*.png
 outputs/*.csv
 tmp/
