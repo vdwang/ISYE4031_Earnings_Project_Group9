@@ -1,8 +1,24 @@
 # ISYE 4031 post-earnings returns project
 
-## Expanded dataset on the research branch
+## S&P 500 dataset with more than 10000 events
 
-The dataset research branch now contains **1,714 complete earnings events from
+The current research dataset has **28,496 complete events from 495 companies**,
+25 numeric predictors and 11 industry groups during 2010–2025. All 500 issuers
+in the downloaded S&P 500 snapshot were attempted; five lack enough usable
+history. Multiple stock classes are consolidated by issuer so they do not
+inflate event counts. This is a snapshot-constituent panel, not historical
+index membership.
+
+Start with the **[S&P 500 dataset guide](research/datasets/SP500_README.md)**,
+download the **[actual CSV](research/datasets/sp500_modeling_dataset.csv)**,
+or read the **[source and quality report](reports/SP500_DATASET.md)**.
+Build commands are in [research/README.md](research/README.md).
+The 400-event Milestone 2 report and 1,714-event pilot are retained as earlier
+snapshots; no S&P 500 model has been evaluated yet.
+
+## Earlier 27 company dataset
+
+The earlier research snapshot contains **1,714 complete earnings events from
 27 companies in 11 industry groups during 2010–2025**, with **25 numeric
 predictors**. It combines earnings, stock/sector prices, Cboe volatility indexes
 and Federal Reserve Treasury yields. Start with the

@@ -1,0 +1,5 @@
+file,sha256,bytes,source_url
+roster.txt,a13dc3b5f1c1dafd36e8c700a82ba90bc06c434623dfb5780c516134cee1d48e,53607,https://github.com/datasets/s-and-p-500-companies
+hf_earnings.parquet,8c8090c06990e339d3bc0dbac3634bf6b618c587c1f6ae3a793a912d5a09c84a,874778,https://huggingface.co/datasets/jwigginton/earnings-sp500
+hf_constituents.parquet,813b095291414dab8fc278920e7e829190c5bc448dccf1f1dc0901ab3f1c458a,30016,https://huggingface.co/datasets/jwigginton/index-constituents-sp500
+pead_results.csv,eed20c55f084927b4f8bb9f43a045dadd6793ba73fc6bde9d9114026d13e7084,4249368,https://github.com/dylan-jeon/earnings-surprise-analysis

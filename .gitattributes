@@ -1,0 +1,2 @@
+# Keep the verified shared dataset byte-identical across Windows and GitHub.
+research/datasets/sp500_modeling_dataset.csv text eol=lf

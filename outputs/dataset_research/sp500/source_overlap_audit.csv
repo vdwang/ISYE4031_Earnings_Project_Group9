@@ -1,0 +1,4 @@
+variable,same_date_overlaps,difference_over_0_01,difference_over_5_points
+estimated_eps,15771,6739,
+reported_eps,15771,2616,
+derived_surprise_percentage_points,15771,7988,2091.0

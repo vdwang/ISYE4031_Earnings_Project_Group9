@@ -1,5 +1,9 @@
 # Expanded earnings dataset findings
 
+**Earlier pilot snapshot:** the current larger implementation is the
+[28,496-event S&P 500 dataset](SP500_DATASET.md). The 1,714-event analysis below
+is retained for reproducibility.
+
 The research branch now contains **1,714 complete earnings events from 27
 companies in 11 industry groups, covering 2010–2025**, with **25 numeric research
 predictors**. This is 4.29 times the original 400-event sample and 2.73 times

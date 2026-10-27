@@ -1,5 +1,49 @@
 # Dataset quality research
 
+## Current S&P 500 dataset
+
+The requested scale-up is complete: **28,496 complete events, 495 companies,
+25 numeric predictors, 2010–2025**. All 500 snapshot issuers were attempted.
+Open the **[S&P 500 guide](datasets/SP500_README.md)** or
+**[actual dataset](datasets/sp500_modeling_dataset.csv)**. The earlier 1,714-event
+pilot below is retained separately. Read the
+[S&P 500 source/quality report](../reports/SP500_DATASET.md) before modeling.
+
+### Rebuild the S&P 500 panel
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r research\requirements-sp500.txt
+.\.venv\Scripts\python.exe research\collect_expansion.py --only context
+.\.venv\Scripts\python.exe research\collect_sp500.py
+.\.venv\Scripts\python.exe research\fill_sp500_gaps.py
+.\.venv\Scripts\python.exe research\build_sp500.py
+.\.venv\Scripts\python.exe research\profile_sp500.py
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+```
+
+The committed CSV can be used immediately. Rebuilding uses public bulk EPS
+archives, a dated constituent registry, individual cached Yahoo prices and
+Cboe/FRED context. No new Alpha Vantage calls are needed. For the exact submitted
+source mix, the original private pilot earnings caches must also be present;
+otherwise the builder chooses available bulk sources and resulting counts or
+values may differ. This difference is visible in `earnings_source`.
+
+`collect_sp500.py --inputs-only` collects/normalizes just the roster and bulk
+inputs. The full command collects prices with two workers, reuses caches and
+stops new network calls after a rate-limit exception. Failed symbols remain
+listed in its manifest. Rerun to resume failed/missing requests when access
+returns. `fill_sp500_gaps.py` attempts only companies missing from bulk earnings.
+Current-snapshot sector labels and CIK-linked aliases are preserved explicitly.
+
+Raw inputs are ignored under `data/raw/research/sp500/`; all-event audit data
+are private under `data/processed/research/sp500_all_events.csv`. The shared
+complete CSV and dictionary are under `research/datasets/`; all issuer statuses,
+source hashes, missingness, flags and checks are under
+`outputs/dataset_research/sp500/`. The profiler verifies every target, not just
+a sample. No source-provided CAR/return column or clipped surprise is reused.
+
+### Earlier pilot
+
 This branch includes an actual expanded dataset: **1,714 complete events from
 27 companies, 11 industry groups and 25 numeric predictors, 2010–2025**.
 Open [the dataset guide](datasets/README.md),

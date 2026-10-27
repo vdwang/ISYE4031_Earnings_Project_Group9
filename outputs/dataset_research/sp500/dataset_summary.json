@@ -1,0 +1,19 @@
+{
+  "roster_listings": 503,
+  "roster_issuers": 500,
+  "issuers_with_complete_events": 495,
+  "candidate_events": 28941,
+  "events_with_price_table": 28941,
+  "complete_events": 28496,
+  "numeric_predictors": 25,
+  "sectors": 11,
+  "first_report": "2010-01-05",
+  "last_report": "2025-12-19",
+  "duplicate_issuer_date_keys": 0,
+  "large_surprise_flags": 834,
+  "short_gap_flags": 29,
+  "meets_10000_event_target": true,
+  "current_snapshot_not_historical_membership": true,
+  "models_refitted": false,
+  "dataset_sha256": "07fd49a9b79b1ad5a964354dc2afdafd9b96224ff4edcd5367d1174baa335c9f"
+}

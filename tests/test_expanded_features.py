@@ -7,6 +7,7 @@ import pandas as pd
 
 from research.expanded_features import earnings_history, lagged_context, enrich_events, MODEL_FEATURES
 from src.build_dataset import build_events
+from research.sp500_features import daily_features, add_earnings_history
 
 
 class ExpandedFeatureTests(unittest.TestCase):
@@ -61,6 +62,24 @@ class ExpandedFeatureTests(unittest.TestCase):
         other = enrich_events(second, earnings, changed, universe, context)
         np.testing.assert_allclose(original[MODEL_FEATURES], other[MODEL_FEATURES], equal_nan=True)
         self.assertNotEqual(original.loc[0, "future_5d_return"], other.loc[0, "future_5d_return"])
+        # The scalable implementation must reproduce the independently calculated pilot features.
+        vector = daily_features(prices["TEST"], prices["SPY"], prices["XLK"])
+        row = vector.loc[vector.reaction_day.eq(first.loc[0, "reaction_day"])].iloc[0]
+        common = [c for c in MODEL_FEATURES if c in vector]
+        np.testing.assert_allclose(row[common].to_numpy(dtype=float), original.loc[0, common].to_numpy(dtype=float), atol=1e-9)
+        future_changed = daily_features(changed["TEST"], changed["SPY"], changed["XLK"])
+        row2 = future_changed.loc[future_changed.reaction_day.eq(first.loc[0, "reaction_day"])].iloc[0]
+        np.testing.assert_allclose(row[common].to_numpy(dtype=float), row2[common].to_numpy(dtype=float), atol=1e-9)
+
+    def test_bulk_history_preserves_missing_quarters_and_rejects_duplicate_announcements(self):
+        frame = pd.DataFrame({"ticker": "TEST", "reported_date": pd.date_range("2020-01-01", periods=6, freq="QS"),
+            "earnings_surprise_pct": [1, np.nan, 3, 4, 1000, -1000]})
+        result = add_earnings_history(frame)
+        self.assertTrue(pd.isna(result.loc[4, "prior_surprise_mean_4q"]))
+        self.assertTrue(pd.isna(result.loc[5, "prior_surprise_mean_4q"]))
+        self.assertEqual(result.loc[5, "previous_earnings_surprise_pct"], 1000)
+        with self.assertRaises(ValueError):
+            add_earnings_history(pd.concat([frame, frame.iloc[[0]]]))
 
 
 if __name__ == "__main__":

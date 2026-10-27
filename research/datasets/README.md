@@ -1,5 +1,10 @@
 # Expanded earnings dataset
 
+**Current larger dataset:** use the
+[S&P 500 guide](SP500_README.md) and
+[28,496-event S&P 500 CSV](sp500_modeling_dataset.csv) for the requested full-roster
+scale-up. The 1,714-event dataset described below is the earlier pilot snapshot.
+
 Open **[expanded_modeling_dataset.csv](expanded_modeling_dataset.csv)** for the
 current research dataset. It contains **1,714 real earnings events from 27
 companies in 11 descriptive industry groups during 2010–2025**. Each event has

@@ -1,5 +1,11 @@
 # Dataset quality and expansion findings
 
+**Latest implementation:** the S&P 500 expansion now has **28,496 complete
+events from 495 companies**, after attempting every issuer in the 500-company
+snapshot. Use [the S&P 500 guide](../research/datasets/SP500_README.md) and
+[current quality report](SP500_DATASET.md). The comparisons below record earlier
+pilot research.
+
 Audited October 27, 2026. Research branch: `codex/dataset-quality-research`.
 
 **Implemented expansion:** the branch now includes a downloadable derived

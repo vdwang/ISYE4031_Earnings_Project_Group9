@@ -1,0 +1,17 @@
+{
+  "checked_events": 28496,
+  "stock_target_errors": 0,
+  "spy_target_errors": 0,
+  "five_session_errors": 0,
+  "reaction_alignment_errors": 0,
+  "duplicate_issuer_date_keys": 0,
+  "nonfinite_predictor_cells": 0,
+  "adjusted_target_errors": 0,
+  "direction_errors": 0,
+  "reaction_gap_errors": 0,
+  "vix_date_errors": 0,
+  "vvix_date_errors": 0,
+  "dgs10_date_errors": 0,
+  "dgs2_date_errors": 0,
+  "boundary_errors": 0
+}

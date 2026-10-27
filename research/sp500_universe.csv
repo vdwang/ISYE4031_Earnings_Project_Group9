@@ -1,0 +1,501 @@
+cik,Symbol,Security,GICS Sector,ticker,sector,sector_etf,cohort
+0000001800,ABT,Abbott Laboratories,Health Care,ABT,Health Care,XLV,sp500_snapshot
+0000002488,AMD,Advanced Micro Devices,Information Technology,AMD,Technology,XLK,sp500_snapshot
+0000002969,APD,Air Products,Materials,APD,Materials,XLB,sp500_snapshot
+0000004127,SWKS,Skyworks Solutions,Information Technology,SWKS,Technology,XLK,sp500_snapshot
+0000004281,HWM,Howmet Aerospace,Industrials,HWM,Industrials,XLI,sp500_snapshot
+0000004904,AEP,American Electric Power,Utilities,AEP,Utilities,XLU,sp500_snapshot
+0000004962,AXP,American Express,Financials,AXP,Financials,XLF,sp500_snapshot
+0000004977,AFL,Aflac,Financials,AFL,Financials,XLF,sp500_snapshot
+0000005272,AIG,American International Group,Financials,AIG,Financials,XLF,sp500_snapshot
+0000006281,ADI,Analog Devices,Information Technology,ADI,Technology,XLK,sp500_snapshot
+0000006951,AMAT,Applied Materials,Information Technology,AMAT,Technology,XLK,sp500_snapshot
+0000007084,ADM,Archer Daniels Midland,Consumer Staples,ADM,Consumer Staples,XLP,sp500_snapshot
+0000008670,ADP,Automatic Data Processing,Industrials,ADP,Industrials,XLI,sp500_snapshot
+0000008818,AVY,Avery Dennison,Materials,AVY,Materials,XLB,sp500_snapshot
+0000009389,BALL,Ball Corporation,Materials,BALL,Materials,XLB,sp500_snapshot
+0000010456,BAX,Baxter International,Health Care,BAX,Health Care,XLV,sp500_snapshot
+0000010795,BDX,Becton Dickinson,Health Care,BDX,Health Care,XLV,sp500_snapshot
+0000011544,WRB,W. R. Berkley Corporation,Financials,WRB,Financials,XLF,sp500_snapshot
+0000012927,BA,Boeing,Industrials,BA,Industrials,XLI,sp500_snapshot
+0000014272,BMY,Bristol Myers Squibb,Health Care,BMY,Health Care,XLV,sp500_snapshot
+0000014693,BF.B,Brown–Forman,Consumer Staples,BF-B,Consumer Staples,XLP,sp500_snapshot
+0000016918,STZ,Constellation Brands,Consumer Staples,STZ,Consumer Staples,XLP,sp500_snapshot
+0000018230,CAT,Caterpillar Inc.,Industrials,CAT,Industrials,XLI,sp500_snapshot
+0000019617,JPM,JPMorgan Chase,Financials,JPM,Financials,XLF,sp500_snapshot
+0000020286,CINF,Cincinnati Financial,Financials,CINF,Financials,XLF,sp500_snapshot
+0000021076,CLX,Clorox,Consumer Staples,CLX,Consumer Staples,XLP,sp500_snapshot
+0000021344,KO,Coca-Cola Company (The),Consumer Staples,KO,Consumer Staples,XLP,sp500_snapshot
+0000021665,CL,Colgate-Palmolive,Consumer Staples,CL,Consumer Staples,XLP,sp500_snapshot
+0000024741,GLW,Corning Inc.,Information Technology,GLW,Technology,XLK,sp500_snapshot
+0000026172,CMI,Cummins,Industrials,CMI,Industrials,XLI,sp500_snapshot
+0000027419,TGT,Target Corporation,Consumer Staples,TGT,Consumer Staples,XLP,sp500_snapshot
+0000027904,DAL,Delta Air Lines,Industrials,DAL,Industrials,XLI,sp500_snapshot
+0000029534,DG,Dollar General,Consumer Staples,DG,Consumer Staples,XLP,sp500_snapshot
+0000029905,DOV,Dover Corporation,Industrials,DOV,Industrials,XLI,sp500_snapshot
+0000029989,OMC,Omnicom Group,Communication Services,OMC,Communication Services,XLC,sp500_snapshot
+0000031462,ECL,Ecolab,Materials,ECL,Materials,XLB,sp500_snapshot
+0000031791,RVTY,Revvity,Health Care,RVTY,Health Care,XLV,sp500_snapshot
+0000032604,EMR,Emerson Electric,Industrials,EMR,Industrials,XLI,sp500_snapshot
+0000033185,EFX,Equifax,Industrials,EFX,Industrials,XLI,sp500_snapshot
+0000033213,EQT,EQT Corporation,Energy,EQT,Energy,XLE,sp500_snapshot
+0000034903,FRT,Federal Realty Investment Trust,Real Estate,FRT,Real Estate,XLRE,sp500_snapshot
+0000035527,FITB,Fifth Third Bancorp,Financials,FITB,Financials,XLF,sp500_snapshot
+0000036104,USB,U.S. Bancorp,Financials,USB,Financials,XLF,sp500_snapshot
+0000036270,MTB,M&T Bank,Financials,MTB,Financials,XLF,sp500_snapshot
+0000037996,F,Ford Motor Company,Consumer Discretionary,F,Consumer Discretionary,XLY,sp500_snapshot
+0000038777,BEN,Franklin Resources,Financials,BEN,Financials,XLF,sp500_snapshot
+0000040533,GD,General Dynamics,Industrials,GD,Industrials,XLI,sp500_snapshot
+0000040545,GE,GE Aerospace,Industrials,GE,Industrials,XLI,sp500_snapshot
+0000040704,GIS,General Mills,Consumer Staples,GIS,Consumer Staples,XLP,sp500_snapshot
+0000040987,GPC,Genuine Parts Company,Consumer Discretionary,GPC,Consumer Discretionary,XLY,sp500_snapshot
+0000045012,HAL,Halliburton,Energy,HAL,Energy,XLE,sp500_snapshot
+0000046080,HAS,Hasbro,Consumer Discretionary,HAS,Consumer Discretionary,XLY,sp500_snapshot
+0000047111,HSY,Hershey Company (The),Consumer Staples,HSY,Consumer Staples,XLP,sp500_snapshot
+0000047217,HPQ,HP Inc.,Information Technology,HPQ,Technology,XLK,sp500_snapshot
+0000048465,HRL,Hormel Foods,Consumer Staples,HRL,Consumer Staples,XLP,sp500_snapshot
+0000048898,HUBB,Hubbell Incorporated,Industrials,HUBB,Industrials,XLI,sp500_snapshot
+0000049071,HUM,Humana,Health Care,HUM,Health Care,XLV,sp500_snapshot
+0000049196,HBAN,Huntington Bancshares,Financials,HBAN,Financials,XLF,sp500_snapshot
+0000049826,ITW,Illinois Tool Works,Industrials,ITW,Industrials,XLI,sp500_snapshot
+0000050863,INTC,Intel,Information Technology,INTC,Technology,XLK,sp500_snapshot
+0000051143,IBM,IBM,Information Technology,IBM,Technology,XLK,sp500_snapshot
+0000051253,IFF,International Flavors & Fragrances,Materials,IFF,Materials,XLB,sp500_snapshot
+0000051434,IP,International Paper,Materials,IP,Materials,XLB,sp500_snapshot
+0000052988,J,Jacobs Solutions,Industrials,J,Industrials,XLI,sp500_snapshot
+0000055785,KMB,Kimberly-Clark,Consumer Staples,KMB,Consumer Staples,XLP,sp500_snapshot
+0000056873,KR,Kroger,Consumer Staples,KR,Consumer Staples,XLP,sp500_snapshot
+0000059478,LLY,Lilly (Eli),Health Care,LLY,Health Care,XLV,sp500_snapshot
+0000060086,L,Loews Corporation,Financials,L,Financials,XLF,sp500_snapshot
+0000060667,LOW,Lowe's,Consumer Discretionary,LOW,Consumer Discretionary,XLY,sp500_snapshot
+0000062709,MRSH,Marsh McLennan,Financials,MRSH,Financials,XLF,sp500_snapshot
+0000062996,MAS,Masco,Industrials,MAS,Industrials,XLI,sp500_snapshot
+0000063754,MKC,McCormick & Company,Consumer Staples,MKC,Consumer Staples,XLP,sp500_snapshot
+0000063908,MCD,McDonald's,Consumer Discretionary,MCD,Consumer Discretionary,XLY,sp500_snapshot
+0000064040,SPGI,S&P Global,Financials,SPGI,Financials,XLF,sp500_snapshot
+0000064803,CVS,CVS Health,Health Care,CVS,Health Care,XLV,sp500_snapshot
+0000065984,ETR,Entergy,Utilities,ETR,Utilities,XLU,sp500_snapshot
+0000066740,MMM,3M,Industrials,MMM,Industrials,XLI,sp500_snapshot
+0000068505,MSI,Motorola Solutions,Information Technology,MSI,Technology,XLK,sp500_snapshot
+0000070858,BAC,Bank of America,Financials,BAC,Financials,XLF,sp500_snapshot
+0000072331,NDSN,Nordson Corporation,Industrials,NDSN,Industrials,XLI,sp500_snapshot
+0000072741,ES,Eversource Energy,Utilities,ES,Utilities,XLU,sp500_snapshot
+0000072903,XEL,Xcel Energy,Utilities,XEL,Utilities,XLU,sp500_snapshot
+0000072971,WFC,Wells Fargo,Financials,WFC,Financials,XLF,sp500_snapshot
+0000073124,NTRS,Northern Trust,Financials,NTRS,Financials,XLF,sp500_snapshot
+0000073309,NUE,Nucor,Materials,NUE,Materials,XLB,sp500_snapshot
+0000074208,UDR,"UDR, Inc.",Real Estate,UDR,Real Estate,XLRE,sp500_snapshot
+0000075362,PCAR,Paccar,Industrials,PCAR,Industrials,XLI,sp500_snapshot
+0000075677,PKG,Packaging Corporation of America,Materials,PKG,Materials,XLB,sp500_snapshot
+0000076334,PH,Parker Hannifin,Industrials,PH,Industrials,XLI,sp500_snapshot
+0000077360,PNR,Pentair,Industrials,PNR,Industrials,XLI,sp500_snapshot
+0000077476,PEP,PepsiCo,Consumer Staples,PEP,Consumer Staples,XLP,sp500_snapshot
+0000078003,PFE,Pfizer,Health Care,PFE,Health Care,XLV,sp500_snapshot
+0000079282,BRO,Brown & Brown,Financials,BRO,Financials,XLF,sp500_snapshot
+0000079879,PPG,PPG Industries,Materials,PPG,Materials,XLB,sp500_snapshot
+0000080424,PG,Procter & Gamble,Consumer Staples,PG,Consumer Staples,XLP,sp500_snapshot
+0000080661,PGR,Progressive Corporation,Financials,PGR,Financials,XLF,sp500_snapshot
+0000084839,ROL,"Rollins, Inc.",Industrials,ROL,Industrials,XLI,sp500_snapshot
+0000086312,TRV,Travelers Companies (The),Financials,TRV,Financials,XLF,sp500_snapshot
+0000087347,SLB,Schlumberger,Energy,SLB,Energy,XLE,sp500_snapshot
+0000089800,SHW,Sherwin-Williams,Materials,SHW,Materials,XLB,sp500_snapshot
+0000091142,AOS,A. O. Smith,Industrials,AOS,Industrials,XLI,sp500_snapshot
+0000091419,SJM,J.M. Smucker Company (The),Consumer Staples,SJM,Consumer Staples,XLP,sp500_snapshot
+0000091440,SNA,Snap-on,Industrials,SNA,Industrials,XLI,sp500_snapshot
+0000091576,KEY,KeyCorp,Financials,KEY,Financials,XLF,sp500_snapshot
+0000092122,SO,Southern Company,Utilities,SO,Utilities,XLU,sp500_snapshot
+0000092230,TFC,Truist Financial,Financials,TFC,Financials,XLF,sp500_snapshot
+0000092380,LUV,Southwest Airlines,Industrials,LUV,Industrials,XLI,sp500_snapshot
+0000093410,CVX,Chevron Corporation,Energy,CVX,Energy,XLE,sp500_snapshot
+0000093556,SWK,Stanley Black & Decker,Industrials,SWK,Industrials,XLI,sp500_snapshot
+0000093751,STT,State Street Corporation,Financials,STT,Financials,XLF,sp500_snapshot
+0000096021,SYY,Sysco,Consumer Staples,SYY,Consumer Staples,XLP,sp500_snapshot
+0000097210,TER,Teradyne,Information Technology,TER,Technology,XLK,sp500_snapshot
+0000097476,TXN,Texas Instruments,Information Technology,TXN,Technology,XLK,sp500_snapshot
+0000097745,TMO,Thermo Fisher Scientific,Health Care,TMO,Health Care,XLV,sp500_snapshot
+0000100493,TSN,Tyson Foods,Consumer Staples,TSN,Consumer Staples,XLP,sp500_snapshot
+0000100517,UAL,United Airlines Holdings,Industrials,UAL,Industrials,XLI,sp500_snapshot
+0000100885,UNP,Union Pacific Corporation,Industrials,UNP,Industrials,XLI,sp500_snapshot
+0000101829,RTX,RTX Corporation,Industrials,RTX,Industrials,XLI,sp500_snapshot
+0000104169,WMT,Walmart,Consumer Staples,WMT,Consumer Staples,XLP,sp500_snapshot
+0000105634,EME,Emcor,Industrials,EME,Industrials,XLI,sp500_snapshot
+0000105770,WST,West Pharmaceutical Services,Health Care,WST,Health Care,XLV,sp500_snapshot
+0000106040,WDC,Western Digital,Information Technology,WDC,Technology,XLK,sp500_snapshot
+0000106535,WY,Weyerhaeuser,Real Estate,WY,Real Estate,XLRE,sp500_snapshot
+0000107263,WMB,Williams Companies,Energy,WMB,Energy,XLE,sp500_snapshot
+0000109198,TJX,TJX Companies,Consumer Discretionary,TJX,Consumer Discretionary,XLY,sp500_snapshot
+0000200406,JNJ,Johnson & Johnson,Health Care,JNJ,Health Care,XLV,sp500_snapshot
+0000202058,LHX,L3Harris,Industrials,LHX,Industrials,XLI,sp500_snapshot
+0000217346,TXT,Textron,Industrials,TXT,Industrials,XLI,sp500_snapshot
+0000277135,GWW,W. W. Grainger,Industrials,GWW,Industrials,XLI,sp500_snapshot
+0000277948,CSX,CSX Corporation,Industrials,CSX,Industrials,XLI,sp500_snapshot
+0000310158,MRK,Merck & Co.,Health Care,MRK,Health Care,XLV,sp500_snapshot
+0000310764,SYK,Stryker Corporation,Health Care,SYK,Health Care,XLV,sp500_snapshot
+0000313616,DHR,Danaher Corporation,Health Care,DHR,Health Care,XLV,sp500_snapshot
+0000313927,CHD,Church & Dwight,Consumer Staples,CHD,Consumer Staples,XLP,sp500_snapshot
+0000315189,DE,Deere & Company,Industrials,DE,Industrials,XLI,sp500_snapshot
+0000315293,AON,Aon plc,Financials,AON,Financials,XLF,sp500_snapshot
+0000316709,SCHW,Charles Schwab Corporation,Financials,SCHW,Financials,XLF,sp500_snapshot
+0000318154,AMGN,Amgen,Health Care,AMGN,Health Care,XLV,sp500_snapshot
+0000319201,KLAC,KLA Corporation,Information Technology,KLAC,Technology,XLK,sp500_snapshot
+0000320187,NKE,"Nike, Inc.",Consumer Discretionary,NKE,Consumer Discretionary,XLY,sp500_snapshot
+0000320193,AAPL,Apple Inc.,Information Technology,AAPL,Technology,XLK,sp500_snapshot
+0000320335,GL,Globe Life,Financials,GL,Financials,XLF,sp500_snapshot
+0000352541,LNT,Alliant Energy,Utilities,LNT,Utilities,XLU,sp500_snapshot
+0000352915,UHS,Universal Health Services,Health Care,UHS,Health Care,XLV,sp500_snapshot
+0000354190,AJG,Arthur J. Gallagher & Co.,Financials,AJG,Financials,XLF,sp500_snapshot
+0000354950,HD,Home Depot (The),Consumer Discretionary,HD,Consumer Discretionary,XLY,sp500_snapshot
+0000702165,NSC,Norfolk Southern,Industrials,NSC,Industrials,XLI,sp500_snapshot
+0000707549,LRCX,Lam Research,Information Technology,LRCX,Technology,XLK,sp500_snapshot
+0000711404,COO,Cooper Companies (The),Health Care,COO,Health Care,XLV,sp500_snapshot
+0000713676,PNC,PNC Financial Services,Financials,PNC,Financials,XLF,sp500_snapshot
+0000715957,D,Dominion Energy,Utilities,D,Utilities,XLU,sp500_snapshot
+0000719955,WSM,"Williams-Sonoma, Inc.",Consumer Discretionary,WSM,Consumer Discretionary,XLY,sp500_snapshot
+0000720005,RJF,Raymond James Financial,Financials,RJF,Financials,XLF,sp500_snapshot
+0000721371,CAH,Cardinal Health,Health Care,CAH,Health Care,XLV,sp500_snapshot
+0000723125,MU,Micron Technology,Information Technology,MU,Technology,XLK,sp500_snapshot
+0000723254,CTAS,Cintas,Industrials,CTAS,Industrials,XLI,sp500_snapshot
+0000723531,PAYX,Paychex,Industrials,PAYX,Industrials,XLI,sp500_snapshot
+0000726728,O,Realty Income,Real Estate,O,Real Estate,XLRE,sp500_snapshot
+0000726958,CASY,Casey's,Consumer Staples,CASY,Consumer Staples,XLP,sp500_snapshot
+0000728535,JBHT,J.B. Hunt,Industrials,JBHT,Industrials,XLI,sp500_snapshot
+0000731766,UNH,UnitedHealth Group,Health Care,UNH,Health Care,XLV,sp500_snapshot
+0000731802,ATO,Atmos Energy,Utilities,ATO,Utilities,XLU,sp500_snapshot
+0000732712,VZ,Verizon,Communication Services,VZ,Communication Services,XLC,sp500_snapshot
+0000732717,T,AT&T,Communication Services,T,Communication Services,XLC,sp500_snapshot
+0000740260,VTR,Ventas,Real Estate,VTR,Real Estate,XLRE,sp500_snapshot
+0000745732,ROST,Ross Stores,Consumer Discretionary,ROST,Consumer Discretionary,XLY,sp500_snapshot
+0000746515,EXPD,Expeditors International,Industrials,EXPD,Industrials,XLI,sp500_snapshot
+0000749251,IT,Gartner,Information Technology,IT,Technology,XLK,sp500_snapshot
+0000753308,NEE,NextEra Energy,Utilities,NEE,Utilities,XLU,sp500_snapshot
+0000759944,CFG,Citizens Financial Group,Financials,CFG,Financials,XLF,sp500_snapshot
+0000764180,MO,Altria,Consumer Staples,MO,Consumer Staples,XLP,sp500_snapshot
+0000764478,BBY,Best Buy,Consumer Discretionary,BBY,Consumer Discretionary,XLY,sp500_snapshot
+0000764622,PNW,Pinnacle West Capital,Utilities,PNW,Utilities,XLU,sp500_snapshot
+0000765880,DOC,Healthpeak Properties,Real Estate,DOC,Real Estate,XLRE,sp500_snapshot
+0000766704,WELL,Welltower,Real Estate,WELL,Real Estate,XLRE,sp500_snapshot
+0000769397,ADSK,Autodesk,Information Technology,ADSK,Technology,XLK,sp500_snapshot
+0000773840,HON,Honeywell Technologies,Industrials,HON,Industrials,XLI,sp500_snapshot
+0000779152,JKHY,Jack Henry & Associates,Financials,JKHY,Financials,XLF,sp500_snapshot
+0000783325,WEC,WEC Energy Group,Utilities,WEC,Utilities,XLU,sp500_snapshot
+0000788784,PEG,Public Service Enterprise Group,Utilities,PEG,Utilities,XLU,sp500_snapshot
+0000789019,MSFT,Microsoft,Information Technology,MSFT,Technology,XLK,sp500_snapshot
+0000789570,MGM,MGM Resorts,Consumer Discretionary,MGM,Consumer Discretionary,XLY,sp500_snapshot
+0000796343,ADBE,Adobe Inc.,Information Technology,ADBE,Technology,XLK,sp500_snapshot
+0000797468,OXY,Occidental Petroleum,Energy,OXY,Energy,XLE,sp500_snapshot
+0000798354,FISV,Fiserv,Financials,FISV,Financials,XLF,sp500_snapshot
+0000804328,QCOM,Qualcomm,Information Technology,QCOM,Technology,XLK,sp500_snapshot
+0000811156,CMS,CMS Energy,Utilities,CMS,Utilities,XLU,sp500_snapshot
+0000813672,CDNS,Cadence Design Systems,Information Technology,CDNS,Technology,XLK,sp500_snapshot
+0000814547,FICO,Fair Isaac,Information Technology,FICO,Technology,XLK,sp500_snapshot
+0000815097,CCL,Carnival Corporation,Consumer Discretionary,CCL,Consumer Discretionary,XLY,sp500_snapshot
+0000815556,FAST,Fastenal,Industrials,FAST,Industrials,XLI,sp500_snapshot
+0000820027,AMP,Ameriprise Financial,Financials,AMP,Financials,XLF,sp500_snapshot
+0000820313,APH,Amphenol,Information Technology,APH,Technology,XLK,sp500_snapshot
+0000820318,COHR,Coherent Corp.,Information Technology,COHR,Technology,XLK,sp500_snapshot
+0000821189,EOG,EOG Resources,Energy,EOG,Energy,XLE,sp500_snapshot
+0000822416,PHM,PulteGroup,Consumer Discretionary,PHM,Consumer Discretionary,XLY,sp500_snapshot
+0000823768,WM,Waste Management,Industrials,WM,Industrials,XLI,sp500_snapshot
+0000827052,EIX,Edison International,Utilities,EIX,Utilities,XLU,sp500_snapshot
+0000827054,MCHP,Microchip Technology,Information Technology,MCHP,Technology,XLK,sp500_snapshot
+0000829224,SBUX,Starbucks,Consumer Discretionary,SBUX,Consumer Discretionary,XLY,sp500_snapshot
+0000831001,C,Citigroup,Financials,C,Financials,XLF,sp500_snapshot
+0000831259,FCX,Freeport-McMoRan,Materials,FCX,Materials,XLB,sp500_snapshot
+0000832101,IEX,IDEX Corporation,Industrials,IEX,Industrials,XLI,sp500_snapshot
+0000833444,JCI,Johnson Controls,Industrials,JCI,Industrials,XLI,sp500_snapshot
+0000842023,TECH,Bio-Techne,Health Care,TECH,Health Care,XLV,sp500_snapshot
+0000849395,CRH,CRH plc,Materials,CRH,Materials,XLB,sp500_snapshot
+0000849399,GEN,Gen Digital,Information Technology,GEN,Technology,XLK,sp500_snapshot
+0000857005,PTC,PTC Inc.,Information Technology,PTC,Technology,XLK,sp500_snapshot
+0000858877,CSCO,Cisco,Information Technology,CSCO,Technology,XLK,sp500_snapshot
+0000860730,HCA,HCA Healthcare,Health Care,HCA,Health Care,XLV,sp500_snapshot
+0000860731,TYL,Tyler Technologies,Information Technology,TYL,Technology,XLK,sp500_snapshot
+0000864749,TRMB,Trimble Inc.,Information Technology,TRMB,Technology,XLK,sp500_snapshot
+0000865752,MNST,Monster Beverage,Consumer Staples,MNST,Consumer Staples,XLP,sp500_snapshot
+0000866374,FLEX,Flex Ltd.,Information Technology,FLEX,Technology,XLK,sp500_snapshot
+0000866787,AZO,AutoZone,Consumer Discretionary,AZO,Consumer Discretionary,XLY,sp500_snapshot
+0000872589,REGN,Regeneron Pharmaceuticals,Health Care,REGN,Health Care,XLV,sp500_snapshot
+0000874716,IDXX,Idexx Laboratories,Health Care,IDXX,Health Care,XLV,sp500_snapshot
+0000874761,AES,AES Corporation,Utilities,AES,Utilities,XLU,sp500_snapshot
+0000874766,HIG,Hartford (The),Financials,HIG,Financials,XLF,sp500_snapshot
+0000875045,BIIB,Biogen,Health Care,BIIB,Health Care,XLV,sp500_snapshot
+0000875320,VRTX,Vertex Pharmaceuticals,Health Care,VRTX,Health Care,XLV,sp500_snapshot
+0000877212,ZBRA,Zebra Technologies,Information Technology,ZBRA,Technology,XLK,sp500_snapshot
+0000878927,ODFL,Old Dominion,Industrials,ODFL,Industrials,XLI,sp500_snapshot
+0000879101,KIM,Kimco Realty,Real Estate,KIM,Real Estate,XLRE,sp500_snapshot
+0000879169,INCY,Incyte,Health Care,INCY,Health Care,XLV,sp500_snapshot
+0000882095,GILD,Gilead Sciences,Health Care,GILD,Health Care,XLV,sp500_snapshot
+0000882184,DHI,D. R. Horton,Consumer Discretionary,DHI,Consumer Discretionary,XLY,sp500_snapshot
+0000882835,ROP,Roper Technologies,Information Technology,ROP,Technology,XLK,sp500_snapshot
+0000883241,SNPS,Synopsys,Information Technology,SNPS,Technology,XLK,sp500_snapshot
+0000884887,RCL,Royal Caribbean Group,Consumer Discretionary,RCL,Consumer Discretionary,XLY,sp500_snapshot
+0000885725,BSX,Boston Scientific,Health Care,BSX,Health Care,XLV,sp500_snapshot
+0000886982,GS,Goldman Sachs,Financials,GS,Financials,XLF,sp500_snapshot
+0000895126,EXE,Expand Energy,Energy,EXE,Energy,XLE,sp500_snapshot
+0000895421,MS,Morgan Stanley,Financials,MS,Financials,XLF,sp500_snapshot
+0000896159,CB,Chubb Limited,Financials,CB,Financials,XLF,sp500_snapshot
+0000896878,INTU,Intuit,Information Technology,INTU,Technology,XLK,sp500_snapshot
+0000898173,ORLY,O'Reilly Automotive,Consumer Discretionary,ORLY,Consumer Discretionary,XLY,sp500_snapshot
+0000898293,JBL,Jabil,Information Technology,JBL,Technology,XLK,sp500_snapshot
+0000899051,ALL,Allstate,Financials,ALL,Financials,XLF,sp500_snapshot
+0000900075,CPRT,Copart,Industrials,CPRT,Industrials,XLI,sp500_snapshot
+0000906107,VMRK,Vivmark Residential,Real Estate,VMRK,Real Estate,XLRE,sp500_snapshot
+0000906163,NVR,"NVR, Inc.",Consumer Discretionary,NVR,Consumer Discretionary,XLY,sp500_snapshot
+0000906345,CPT,Camden Property Trust,Real Estate,CPT,Real Estate,XLRE,sp500_snapshot
+0000909832,COST,Costco,Consumer Staples,COST,Consumer Staples,XLP,sp500_snapshot
+0000910521,DECK,Deckers Brands,Consumer Discretionary,DECK,Consumer Discretionary,XLY,sp500_snapshot
+0000910606,REG,Regency Centers,Real Estate,REG,Real Estate,XLRE,sp500_snapshot
+0000912595,MAA,Mid-America Apartment Communities,Real Estate,MAA,Real Estate,XLRE,sp500_snapshot
+0000914208,IVZ,Invesco,Financials,IVZ,Financials,XLF,sp500_snapshot
+0000915913,ALB,Albemarle Corporation,Materials,ALB,Materials,XLB,sp500_snapshot
+0000916076,MLM,Martin Marietta Materials,Materials,MLM,Materials,XLB,sp500_snapshot
+0000916365,TSCO,Tractor Supply,Consumer Discretionary,TSCO,Consumer Discretionary,XLY,sp500_snapshot
+0000920148,LH,Labcorp,Health Care,LH,Health Care,XLV,sp500_snapshot
+0000920522,ESS,Essex Property Trust,Real Estate,ESS,Real Estate,XLRE,sp500_snapshot
+0000920760,LEN,Lennar,Consumer Discretionary,LEN,Consumer Discretionary,XLY,sp500_snapshot
+0000922224,PPL,PPL Corporation,Utilities,PPL,Utilities,XLU,sp500_snapshot
+0000922621,ERIE,Erie Indemnity,Financials,ERIE,Financials,XLF,sp500_snapshot
+0000927066,DVA,DaVita,Health Care,DVA,Health Care,XLV,sp500_snapshot
+0000927628,COF,Capital One,Financials,COF,Financials,XLF,sp500_snapshot
+0000927653,MCK,McKesson,Health Care,MCK,Health Care,XLV,sp500_snapshot
+0000935703,DLTR,Dollar Tree,Consumer Staples,DLTR,Consumer Staples,XLP,sp500_snapshot
+0000936340,DTE,DTE Energy,Utilities,DTE,Utilities,XLU,sp500_snapshot
+0000936395,CIEN,Ciena,Information Technology,CIEN,Technology,XLK,sp500_snapshot
+0000936468,LMT,Lockheed Martin,Industrials,LMT,Industrials,XLI,sp500_snapshot
+0000940944,DRI,Darden Restaurants,Consumer Discretionary,DRI,Consumer Discretionary,XLY,sp500_snapshot
+0000943452,WAB,Wabtec,Industrials,WAB,Industrials,XLI,sp500_snapshot
+0000943819,RMD,ResMed,Health Care,RMD,Health Care,XLV,sp500_snapshot
+0000946581,TTWO,Take-Two Interactive,Communication Services,TTWO,Communication Services,XLC,sp500_snapshot
+0000947484,ACGL,Arch Capital Group,Financials,ACGL,Financials,XLF,sp500_snapshot
+0001000228,HSIC,Henry Schein,Health Care,HSIC,Health Care,XLV,sp500_snapshot
+0001000697,WAT,Waters Corporation,Health Care,WAT,Health Care,XLV,sp500_snapshot
+0001001250,EL,Estée Lauder Companies (The),Consumer Staples,EL,Consumer Staples,XLP,sp500_snapshot
+0001002047,NTAP,NetApp,Information Technology,NTAP,Technology,XLK,sp500_snapshot
+0001002910,AEE,Ameren,Utilities,AEE,Utilities,XLU,sp500_snapshot
+0001004980,PCG,PG&E Corporation,Utilities,PCG,Utilities,XLU,sp500_snapshot
+0001013237,FDS,FactSet,Financials,FDS,Financials,XLF,sp500_snapshot
+0001013871,NRG,NRG Energy,Utilities,NRG,Utilities,XLU,sp500_snapshot
+0001014473,VRSN,Verisign,Information Technology,VRSN,Technology,XLK,sp500_snapshot
+0001018724,AMZN,Amazon,Consumer Discretionary,AMZN,Consumer Discretionary,XLY,sp500_snapshot
+0001020569,IRM,Iron Mountain,Real Estate,IRM,Real Estate,XLRE,sp500_snapshot
+0001022079,DGX,Quest Diagnostics,Health Care,DGX,Health Care,XLV,sp500_snapshot
+0001022671,STLD,Steel Dynamics,Materials,STLD,Materials,XLB,sp500_snapshot
+0001024478,ROK,Rockwell Automation,Industrials,ROK,Industrials,XLI,sp500_snapshot
+0001031296,FE,FirstEnergy,Utilities,FE,Utilities,XLU,sp500_snapshot
+0001032208,SRE,Sempra,Utilities,SRE,Utilities,XLU,sp500_snapshot
+0001034054,SBAC,SBA Communications,Real Estate,SBAC,Real Estate,XLRE,sp500_snapshot
+0001035002,VLO,Valero Energy,Energy,VLO,Energy,XLE,sp500_snapshot
+0001035267,ISRG,Intuitive Surgical,Health Care,ISRG,Health Care,XLV,sp500_snapshot
+0001035443,ARE,Alexandria Real Estate Equities,Real Estate,ARE,Real Estate,XLRE,sp500_snapshot
+0001035983,FIX,Comfort Systems USA,Industrials,FIX,Industrials,XLI,sp500_snapshot
+0001037038,RL,Ralph Lauren Corporation,Consumer Discretionary,RL,Consumer Discretionary,XLY,sp500_snapshot
+0001037540,BXP,"BXP, Inc.",Real Estate,BXP,Real Estate,XLRE,sp500_snapshot
+0001037646,MTD,Mettler Toledo,Health Care,MTD,Health Care,XLV,sp500_snapshot
+0001037868,AME,Ametek,Industrials,AME,Industrials,XLI,sp500_snapshot
+0001039684,OKE,Oneok,Energy,OKE,Energy,XLE,sp500_snapshot
+0001041061,YUM,Yum! Brands,Consumer Discretionary,YUM,Consumer Discretionary,XLY,sp500_snapshot
+0001043277,CHRW,C.H. Robinson,Industrials,CHRW,Industrials,XLI,sp500_snapshot
+0001045609,PLD,Prologis,Real Estate,PLD,Real Estate,XLRE,sp500_snapshot
+0001045810,NVDA,Nvidia,Information Technology,NVDA,Technology,XLK,sp500_snapshot
+0001047862,ED,Consolidated Edison,Utilities,ED,Utilities,XLU,sp500_snapshot
+0001048286,MAR,Marriott International,Consumer Discretionary,MAR,Consumer Discretionary,XLY,sp500_snapshot
+0001048695,FFIV,"F5, Inc.",Information Technology,FFIV,Technology,XLK,sp500_snapshot
+0001048911,FDX,FedEx,Industrials,FDX,Industrials,XLI,sp500_snapshot
+0001050915,PWR,Quanta Services,Industrials,PWR,Industrials,XLI,sp500_snapshot
+0001051470,CCI,Crown Castle,Real Estate,CCI,Real Estate,XLRE,sp500_snapshot
+0001053507,AMT,American Tower,Real Estate,AMT,Real Estate,XLRE,sp500_snapshot
+0001057352,CSGP,CoStar Group,Real Estate,CSGP,Real Estate,XLRE,sp500_snapshot
+0001058090,CMG,Chipotle Mexican Grill,Consumer Discretionary,CMG,Consumer Discretionary,XLY,sp500_snapshot
+0001058290,CTSH,Cognizant,Information Technology,CTSH,Technology,XLK,sp500_snapshot
+0001059556,MCO,Moody's Corporation,Financials,MCO,Financials,XLF,sp500_snapshot
+0001060391,RSG,Republic Services,Industrials,RSG,Industrials,XLI,sp500_snapshot
+0001063761,SPG,Simon Property Group,Real Estate,SPG,Real Estate,XLRE,sp500_snapshot
+0001065088,EBAY,eBay Inc.,Consumer Discretionary,EBAY,Consumer Discretionary,XLY,sp500_snapshot
+0001065280,NFLX,Netflix,Communication Services,NFLX,Communication Services,XLC,sp500_snapshot
+0001067701,URI,United Rentals,Industrials,URI,Industrials,XLI,sp500_snapshot
+0001067983,BRK.B,Berkshire Hathaway,Financials,BRK-B,Financials,XLF,sp500_snapshot
+0001069183,AXON,Axon Enterprise,Industrials,AXON,Industrials,XLI,sp500_snapshot
+0001069202,LII,Lennox International,Industrials,LII,Industrials,XLI,sp500_snapshot
+0001070750,HST,Host Hotels & Resorts,Real Estate,HST,Real Estate,XLRE,sp500_snapshot
+0001071739,CNC,Centene Corporation,Health Care,CNC,Health Care,XLV,sp500_snapshot
+0001075531,BKNG,Booking Holdings,Consumer Discretionary,BKNG,Consumer Discretionary,XLY,sp500_snapshot
+0001086222,AKAM,Akamai Technologies,Information Technology,AKAM,Technology,XLK,sp500_snapshot
+0001090012,DVN,Devon Energy,Energy,DVN,Energy,XLE,sp500_snapshot
+0001090727,UPS,United Parcel Service,Industrials,UPS,Industrials,XLI,sp500_snapshot
+0001090872,A,Agilent Technologies,Health Care,A,Health Care,XLV,sp500_snapshot
+0001091667,CHTR,Charter Communications,Communication Services,CHTR,Communication Services,XLC,sp500_snapshot
+0001093557,DXCM,Dexcom,Health Care,DXCM,Health Care,XLV,sp500_snapshot
+0001094285,TDY,Teledyne Technologies,Information Technology,TDY,Technology,XLK,sp500_snapshot
+0001095073,EG,Everest Group,Financials,EG,Financials,XLF,sp500_snapshot
+0001097149,ALGN,Align Technology,Health Care,ALGN,Health Care,XLV,sp500_snapshot
+0001097864,ON,ON Semiconductor,Information Technology,ON,Technology,XLK,sp500_snapshot
+0001099219,MET,MetLife,Financials,MET,Financials,XLF,sp500_snapshot
+0001099800,EW,Edwards Lifesciences,Health Care,EW,Health Care,XLV,sp500_snapshot
+0001100682,CRL,Charles River Laboratories,Health Care,CRL,Health Care,XLV,sp500_snapshot
+0001101239,EQIX,Equinix,Real Estate,EQIX,Real Estate,XLRE,sp500_snapshot
+0001103982,MDLZ,Mondelez International,Consumer Staples,MDLZ,Consumer Staples,XLP,sp500_snapshot
+0001108524,CRM,Salesforce,Information Technology,CRM,Technology,XLK,sp500_snapshot
+0001109357,EXC,Exelon,Utilities,EXC,Utilities,XLU,sp500_snapshot
+0001110803,ILMN,"Illumina, Inc.",Health Care,ILMN,Health Care,XLV,sp500_snapshot
+0001111711,NI,NiSource,Utilities,NI,Utilities,XLU,sp500_snapshot
+0001113169,TROW,T. Rowe Price,Financials,TROW,Financials,XLF,sp500_snapshot
+0001116132,TPR,"Tapestry, Inc.",Consumer Discretionary,TPR,Consumer Discretionary,XLY,sp500_snapshot
+0001120193,NDAQ,"Nasdaq, Inc.",Financials,NDAQ,Financials,XLF,sp500_snapshot
+0001121788,GRMN,Garmin,Consumer Discretionary,GRMN,Consumer Discretionary,XLY,sp500_snapshot
+0001123360,GPN,Global Payments,Financials,GPN,Financials,XLF,sp500_snapshot
+0001126328,PFG,Principal Financial Group,Financials,PFG,Financials,XLF,sp500_snapshot
+0001130310,CNP,CenterPoint Energy,Utilities,CNP,Utilities,XLU,sp500_snapshot
+0001133421,NOC,Northrop Grumman,Industrials,NOC,Industrials,XLI,sp500_snapshot
+0001136869,ZBH,Zimmer Biomet,Health Care,ZBH,Health Care,XLV,sp500_snapshot
+0001136893,FIS,Fidelity National Information Services,Financials,FIS,Financials,XLF,sp500_snapshot
+0001137774,PRU,Prudential Financial,Financials,PRU,Financials,XLF,sp500_snapshot
+0001137789,STX,Seagate Technology,Information Technology,STX,Technology,XLK,sp500_snapshot
+0001138118,CBRE,CBRE Group,Real Estate,CBRE,Real Estate,XLRE,sp500_snapshot
+0001140536,WTW,Willis Towers Watson,Financials,WTW,Financials,XLF,sp500_snapshot
+0001140859,COR,Cencora,Health Care,COR,Health Care,XLV,sp500_snapshot
+0001141391,MA,Mastercard,Financials,MA,Financials,XLF,sp500_snapshot
+0001145197,PODD,Insulet Corporation,Health Care,PODD,Health Care,XLV,sp500_snapshot
+0001156039,ELV,Elevance Health,Health Care,ELV,Health Care,XLV,sp500_snapshot
+0001156375,CME,CME Group,Financials,CME,Financials,XLF,sp500_snapshot
+0001163165,COP,ConocoPhillips,Energy,COP,Energy,XLE,sp500_snapshot
+0001164727,NEM,Newmont,Materials,NEM,Materials,XLB,sp500_snapshot
+0001166691,CMCSA,Comcast,Communication Services,CMCSA,Communication Services,XLC,sp500_snapshot
+0001174922,WYNN,Wynn Resorts,Consumer Discretionary,WYNN,Consumer Discretionary,XLY,sp500_snapshot
+0001175454,CPAY,Corpay,Financials,CPAY,Financials,XLF,sp500_snapshot
+0001176948,ARES,Ares Management,Financials,ARES,Financials,XLF,sp500_snapshot
+0001260221,TDG,TransDigm Group,Industrials,TDG,Industrials,XLI,sp500_snapshot
+0001262039,FTNT,Fortinet,Information Technology,FTNT,Technology,XLK,sp500_snapshot
+0001267238,AIZ,Assurant,Financials,AIZ,Financials,XLF,sp500_snapshot
+0001274494,FSLR,First Solar,Information Technology,FSLR,Technology,XLK,sp500_snapshot
+0001280452,MPWR,Monolithic Power Systems,Information Technology,MPWR,Technology,XLK,sp500_snapshot
+0001281761,RF,Regions Financial Corporation,Financials,RF,Financials,XLF,sp500_snapshot
+0001283699,TMUS,T-Mobile US,Communication Services,TMUS,Communication Services,XLC,sp500_snapshot
+0001285785,MOS,Mosaic Company (The),Materials,MOS,Materials,XLB,sp500_snapshot
+0001286681,DPZ,Domino's,Consumer Discretionary,DPZ,Consumer Discretionary,XLY,sp500_snapshot
+0001289490,EXR,Extra Space Storage,Real Estate,EXR,Real Estate,XLRE,sp500_snapshot
+0001297996,DLR,Digital Realty,Real Estate,DLR,Real Estate,XLRE,sp500_snapshot
+0001300514,LVS,Las Vegas Sands,Consumer Discretionary,LVS,Consumer Discretionary,XLY,sp500_snapshot
+0001318605,TSLA,"Tesla, Inc.",Consumer Discretionary,TSLA,Consumer Discretionary,XLY,sp500_snapshot
+0001321655,PLTR,Palantir Technologies,Information Technology,PLTR,Technology,XLK,sp500_snapshot
+0001324404,CF,CF Industries,Materials,CF,Materials,XLB,sp500_snapshot
+0001324424,EXPE,Expedia Group,Consumer Discretionary,EXPE,Consumer Discretionary,XLY,sp500_snapshot
+0001326160,DUK,Duke Energy,Utilities,DUK,Utilities,XLU,sp500_snapshot
+0001326801,META,Meta Platforms,Communication Services,META,Communication Services,XLC,sp500_snapshot
+0001327567,PANW,Palo Alto Networks,Information Technology,PANW,Technology,XLK,sp500_snapshot
+0001327811,WDAY,"Workday, Inc.",Information Technology,WDAY,Technology,XLK,sp500_snapshot
+0001335258,LYV,Live Nation Entertainment,Communication Services,LYV,Communication Services,XLC,sp500_snapshot
+0001336920,LDOS,Leidos,Industrials,LDOS,Industrials,XLI,sp500_snapshot
+0001341439,ORCL,Oracle Corporation,Information Technology,ORCL,Technology,XLK,sp500_snapshot
+0001373715,NOW,ServiceNow,Information Technology,NOW,Technology,XLK,sp500_snapshot
+0001374310,CBOE,Cboe Global Markets,Financials,CBOE,Financials,XLF,sp500_snapshot
+0001375365,SMCI,Supermicro,Information Technology,SMCI,Technology,XLK,sp500_snapshot
+0001381197,IBKR,Interactive Brokers,Financials,IBKR,Financials,XLF,sp500_snapshot
+0001383312,BR,Broadridge Financial Solutions,Industrials,BR,Industrials,XLI,sp500_snapshot
+0001385157,TEL,TE Connectivity,Information Technology,TEL,Technology,XLK,sp500_snapshot
+0001389170,TRGP,Targa Resources,Energy,TRGP,Energy,XLE,sp500_snapshot
+0001390777,BNY,BNY Mellon,Financials,BNY,Financials,XLF,sp500_snapshot
+0001393052,VEEV,Veeva Systems,Health Care,VEEV,Health Care,XLV,sp500_snapshot
+0001393311,PSA,Public Storage,Real Estate,PSA,Real Estate,XLRE,sp500_snapshot
+0001393818,BX,Blackstone Inc.,Financials,BX,Financials,XLF,sp500_snapshot
+0001396009,VMC,Vulcan Materials Company,Materials,VMC,Materials,XLB,sp500_snapshot
+0001397187,LULU,Lululemon Athletica,Consumer Discretionary,LULU,Consumer Discretionary,XLY,sp500_snapshot
+0001402057,CDW,CDW Corporation,Information Technology,CDW,Technology,XLK,sp500_snapshot
+0001403161,V,Visa Inc.,Financials,V,Financials,XLF,sp500_snapshot
+0001403568,ULTA,Ulta Beauty,Consumer Discretionary,ULTA,Consumer Discretionary,XLY,sp500_snapshot
+0001404912,KKR,KKR & Co.,Financials,KKR,Financials,XLF,sp500_snapshot
+0001408198,MSCI,MSCI,Financials,MSCI,Financials,XLF,sp500_snapshot
+0001410636,AWK,American Water Works,Utilities,AWK,Utilities,XLU,sp500_snapshot
+0001413329,PM,Philip Morris International,Consumer Staples,PM,Consumer Staples,XLP,sp500_snapshot
+0001413447,NXPI,NXP Semiconductors,Information Technology,NXPI,Technology,XLK,sp500_snapshot
+0001415404,ECHO,EchoStar,Communication Services,ECHO,Communication Services,XLC,sp500_snapshot
+0001418135,KDP,Keurig Dr Pepper,Consumer Staples,KDP,Consumer Staples,XLP,sp500_snapshot
+0001442145,VRSK,Verisk Analytics,Industrials,VRSK,Industrials,XLI,sp500_snapshot
+0001447669,TWLO,Twilio,Information Technology,TWLO,Technology,XLK,sp500_snapshot
+0001466258,TT,Trane Technologies,Industrials,TT,Industrials,XLI,sp500_snapshot
+0001467373,ACN,Accenture,Information Technology,ACN,Technology,XLK,sp500_snapshot
+0001467858,GM,General Motors,Consumer Discretionary,GM,Consumer Discretionary,XLY,sp500_snapshot
+0001474432,P,Everpure,Information Technology,P,Technology,XLK,sp500_snapshot
+0001474735,GNRC,Generac,Industrials,GNRC,Industrials,XLI,sp500_snapshot
+0001478242,IQV,IQVIA,Health Care,IQV,Health Care,XLV,sp500_snapshot
+0001489393,LYB,LyondellBasell,Materials,LYB,Materials,XLB,sp500_snapshot
+0001501585,HII,Huntington Ingalls Industries,Industrials,HII,Industrials,XLI,sp500_snapshot
+0001506307,KMI,Kinder Morgan,Energy,KMI,Energy,XLE,sp500_snapshot
+0001510295,MPC,Marathon Petroleum,Energy,MPC,Energy,XLE,sp500_snapshot
+0001512673,XYZ,"Block, Inc.",Financials,XYZ,Financials,XLF,sp500_snapshot
+0001513761,NCLH,Norwegian Cruise Line Holdings,Consumer Discretionary,NCLH,Consumer Discretionary,XLY,sp500_snapshot
+0001521332,APTV,Aptiv,Consumer Discretionary,APTV,Consumer Discretionary,XLY,sp500_snapshot
+0001524472,XYL,Xylem Inc.,Industrials,XYL,Industrials,XLI,sp500_snapshot
+0001534701,PSX,Phillips 66,Energy,PSX,Energy,XLE,sp500_snapshot
+0001535527,CRWD,CrowdStrike,Information Technology,CRWD,Technology,XLK,sp500_snapshot
+0001539838,FANG,Diamondback Energy,Energy,FANG,Energy,XLE,sp500_snapshot
+0001543151,UBER,Uber,Industrials,UBER,Industrials,XLI,sp500_snapshot
+0001551152,ABBV,AbbVie,Health Care,ABBV,Health Care,XLV,sp500_snapshot
+0001551182,ETN,Eaton Corporation,Industrials,ETN,Industrials,XLI,sp500_snapshot
+0001555280,ZTS,Zoetis,Health Care,ZTS,Health Care,XLV,sp500_snapshot
+0001559720,ABNB,Airbnb,Consumer Discretionary,ABNB,Consumer Discretionary,XLY,sp500_snapshot
+0001561550,DDOG,Datadog,Information Technology,DDOG,Technology,XLK,sp500_snapshot
+0001564708,NWSA,News Corp (Class A),Communication Services,NWSA,Communication Services,XLC,sp500_snapshot
+0001571949,ICE,Intercontinental Exchange,Financials,ICE,Financials,XLF,sp500_snapshot
+0001571996,DELL,Dell Technologies,Information Technology,DELL,Technology,XLK,sp500_snapshot
+0001579241,ALLE,Allegion,Industrials,ALLE,Industrials,XLI,sp500_snapshot
+0001585689,HLT,Hilton Worldwide,Consumer Discretionary,HLT,Consumer Discretionary,XLY,sp500_snapshot
+0001596532,ANET,Arista Networks,Information Technology,ANET,Technology,XLK,sp500_snapshot
+0001601046,KEYS,Keysight Technologies,Information Technology,KEYS,Technology,XLK,sp500_snapshot
+0001601712,SYF,Synchrony Financial,Financials,SYF,Financials,XLF,sp500_snapshot
+0001609711,GDDY,GoDaddy,Information Technology,GDDY,Technology,XLK,sp500_snapshot
+0001613103,MDT,Medtronic,Health Care,MDT,Health Care,XLV,sp500_snapshot
+0001633917,PYPL,PayPal,Financials,PYPL,Financials,XLF,sp500_snapshot
+0001633978,LITE,Lumentum,Information Technology,LITE,Technology,XLK,sp500_snapshot
+0001637459,KHC,Kraft Heinz,Consumer Staples,KHC,Consumer Staples,XLP,sp500_snapshot
+0001645590,HPE,Hewlett Packard Enterprise,Information Technology,HPE,Technology,XLK,sp500_snapshot
+0001652044,GOOGL,Alphabet Inc. (Class A),Communication Services,GOOGL,Communication Services,XLC,sp500_snapshot
+0001659166,FTV,Fortive,Industrials,FTV,Industrials,XLI,sp500_snapshot
+0001664703,BE,Bloom Energy,Industrials,BE,Industrials,XLI,sp500_snapshot
+0001666700,DD,DuPont,Industrials,DD,Industrials,XLI,sp500_snapshot
+0001674101,VRT,Vertiv,Industrials,VRT,Industrials,XLI,sp500_snapshot
+0001679788,COIN,Coinbase,Financials,COIN,Financials,XLF,sp500_snapshot
+0001682852,MRNA,Moderna,Health Care,MRNA,Health Care,XLV,sp500_snapshot
+0001687229,INVH,Invitation Homes,Real Estate,INVH,Real Estate,XLRE,sp500_snapshot
+0001690820,CVNA,Carvana,Consumer Discretionary,CVNA,Consumer Discretionary,XLY,sp500_snapshot
+0001692819,VST,Vistra Corp.,Utilities,VST,Utilities,XLU,sp500_snapshot
+0001699150,IR,Ingersoll Rand,Industrials,IR,Industrials,XLI,sp500_snapshot
+0001701605,BKR,Baker Hughes,Energy,BKR,Energy,XLE,sp500_snapshot
+0001705696,VICI,Vici Properties,Real Estate,VICI,Real Estate,XLRE,sp500_snapshot
+0001707925,LIN,Linde plc,Materials,LIN,Materials,XLB,sp500_snapshot
+0001711269,EVRG,Evergy,Utilities,EVRG,Utilities,XLU,sp500_snapshot
+0001713445,RDDT,Reddit,Communication Services,RDDT,Communication Services,XLC,sp500_snapshot
+0001730168,AVGO,Broadcom,Information Technology,AVGO,Technology,XLK,sp500_snapshot
+0001739940,CI,Cigna,Health Care,CI,Health Care,XLV,sp500_snapshot
+0001744489,DIS,Walt Disney Company (The),Communication Services,DIS,Communication Services,XLC,sp500_snapshot
+0001748790,AMCR,Amcor,Materials,AMCR,Materials,XLB,sp500_snapshot
+0001751008,APP,AppLovin,Communication Services,APP,Communication Services,XLC,sp500_snapshot
+0001751788,DOW,Dow Inc.,Materials,DOW,Materials,XLB,sp500_snapshot
+0001754301,FOXA,Fox Corporation (Class A),Communication Services,FOXA,Communication Services,XLC,sp500_snapshot
+0001757898,STE,Steris,Health Care,STE,Health Care,XLV,sp500_snapshot
+0001781335,OTIS,Otis Worldwide,Industrials,OTIS,Industrials,XLI,sp500_snapshot
+0001783180,CARR,Carrier Global,Industrials,CARR,Industrials,XLI,sp500_snapshot
+0001783879,HOOD,Robinhood Markets,Financials,HOOD,Financials,XLF,sp500_snapshot
+0001792044,VTRS,Viatris,Health Care,VTRS,Health Care,XLV,sp500_snapshot
+0001792789,DASH,DoorDash,Consumer Discretionary,DASH,Consumer Discretionary,XLY,sp500_snapshot
+0001811074,TPL,Texas Pacific Land Corporation,Energy,TPL,Energy,XLE,sp500_snapshot
+0001835632,MRVL,Marvell Technology,Information Technology,MRVL,Technology,XLK,sp500_snapshot
+0001841666,APA,APA Corporation,Energy,APA,Energy,XLE,sp500_snapshot
+0001858681,APO,Apollo Global Management,Financials,APO,Financials,XLF,sp500_snapshot
+0001868275,CEG,Constellation Energy,Utilities,CEG,Utilities,XLU,sp500_snapshot
+0001932393,GEHC,GE HealthCare,Health Care,GEHC,Health Care,XLV,sp500_snapshot
+0001944048,KVUE,Kenvue,Consumer Staples,KVUE,Consumer Staples,XLP,sp500_snapshot
+0001964738,SOLV,Solventum,Health Care,SOLV,Health Care,XLV,sp500_snapshot
+0001967680,VLTO,Veralto,Industrials,VLTO,Industrials,XLI,sp500_snapshot
+0001973266,TKO,TKO Group Holdings,Communication Services,TKO,Communication Services,XLC,sp500_snapshot
+0001996810,GEV,GE Vernova,Industrials,GEV,Industrials,XLI,sp500_snapshot
+0001996862,BG,Bunge Global,Consumer Staples,BG,Consumer Staples,XLP,sp500_snapshot
+0002005951,SW,Smurfit Westrock,Materials,SW,Materials,XLB,sp500_snapshot
+0002011641,FERG,Ferguson Enterprises,Industrials,FERG,Industrials,XLI,sp500_snapshot
+0002012383,BLK,BlackRock,Financials,BLK,Financials,XLF,sp500_snapshot
+0002023554,SNDK,Sandisk,Information Technology,SNDK,Technology,XLK,sp500_snapshot
+0002041610,SKYD,Skydance,Communication Services,SKYD,Communication Services,XLC,sp500_snapshot
+0002058873,Q,Qnity Electronics,Information Technology,Q,Technology,XLK,sp500_snapshot
+0002082247,FDXF,FedEx Freight,Industrials,FDXF,Industrials,XLI,sp500_snapshot
+0002089271,HONA,Honeywell Aerospace,Industrials,HONA,Industrials,XLI,sp500_snapshot
+0002115436,XOM,ExxonMobil,Energy,XOM,Energy,XLE,sp500_snapshot
+0002128626,VYLR,Vylor,Consumer Staples,VYLR,Consumer Staples,XLP,sp500_snapshot
