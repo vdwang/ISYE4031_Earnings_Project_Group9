@@ -1,5 +1,20 @@
 # ISYE 4031 post-earnings returns project
 
+## Expanded dataset on the research branch
+
+The dataset research branch now contains **1,714 complete earnings events from
+27 companies in 11 industry groups during 2010–2025**, with **25 numeric
+predictors**. It combines earnings, stock/sector prices, Cboe volatility indexes
+and Federal Reserve Treasury yields. Start with the
+[dataset guide](research/datasets/README.md), open the
+[actual dataset CSV](research/datasets/expanded_modeling_dataset.csv), or read the
+[expansion findings and limitations](reports/EXPANDED_DATASET.md).
+Reproduction commands are in [research/README.md](research/README.md).
+
+This is a separate expanded research dataset. The completed Milestone 2 report
+and original pipeline retain their 400-event snapshot; no expanded model has
+been fitted or claimed to outperform it.
+
 ## Milestone 2
 
 Meeting 2 updates are on branch `Milestone2updates`: training-only outlier

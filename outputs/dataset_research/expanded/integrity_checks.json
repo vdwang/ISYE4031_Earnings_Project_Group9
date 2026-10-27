@@ -1,0 +1,15 @@
+{
+  "checked_events": 1714,
+  "target_recalculation_errors": 0,
+  "spy_target_recalculation_errors": 0,
+  "five_session_horizon_errors": 0,
+  "duplicate_event_ids": 0,
+  "nonfinite_predictor_cells": 0,
+  "date_order_errors": 0,
+  "market_adjusted_target_errors": 0,
+  "direction_target_errors": 0,
+  "vix_lag_errors": 0,
+  "vvix_lag_errors": 0,
+  "dgs10_lag_errors": 0,
+  "dgs2_lag_errors": 0
+}

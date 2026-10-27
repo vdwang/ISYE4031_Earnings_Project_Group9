@@ -1,0 +1,49 @@
+column,role,units,source,definition
+event_id,metadata_not_default_predictor,text or date,Project construction,Ticker and reported date identifier
+ticker,metadata_not_default_predictor,text or date,Project construction,Vendor company symbol; descriptive identifier
+sector,metadata_not_default_predictor,text or date,Project construction,Fixed descriptive industry grouping; not a reconstructed historical GICS membership
+cohort,metadata_not_default_predictor,text or date,Project construction,Original ten-company cohort or newly added expansion cohort
+fiscal_date_ending,metadata_not_default_predictor,text or date,Project construction,Vendor fiscal-period end; not an availability date
+reported_date,metadata_not_default_predictor,text or date,Project construction,Vendor announcement calendar date; exact release time unverified
+reaction_day,metadata_not_default_predictor,text or date,Project construction,First available stock session strictly after the announcement date; prediction at close
+prediction_start_date,metadata_not_default_predictor,text or date,Project construction,First stock session after reaction; target window starts here
+prediction_end_date,metadata_not_default_predictor,text or date,Project construction,Fifth stock session after reaction; target window ends here
+analysis_split,metadata_not_default_predictor,text or date,Project construction,Train through 2022; validation 2023-2024; exploratory test 2025; boundary-crossing labels purged
+sector_proxy_used,metadata_not_default_predictor,text or date,Project construction,Actual ETF used; VOX before sufficient XLC history and IYR before sufficient XLRE history
+sector_source_date,metadata_not_default_predictor,text or date,Project construction,Last historical proxy close used for the pre-reaction momentum window
+vix_source_date,metadata_not_default_predictor,text or date,Project construction,Date of selected lagged Cboe VIX close
+vvix_source_date,metadata_not_default_predictor,text or date,Project construction,Date of selected lagged Cboe VVIX close
+dgs10_source_date,metadata_not_default_predictor,text or date,Project construction,Date of selected lagged 10-year Treasury observation
+dgs2_source_date,metadata_not_default_predictor,text or date,Project construction,Date of selected lagged 2-year Treasury observation
+earnings_surprise_pct,numeric_predictor,percent,Alpha Vantage,Current announced EPS surprise percentage; potentially unstable near a zero estimate
+reaction_day_return,numeric_predictor,fraction,Yahoo Finance,Adjusted close on reaction day divided by the preceding close minus one
+abnormal_volume,numeric_predictor,ratio,Yahoo Finance,Reaction-day volume divided by the mean volume of the previous 20 sessions
+return_5d_before,numeric_predictor,fraction,Yahoo Finance,Five-session return ending at the close before reaction day
+return_20d_before,numeric_predictor,fraction,Yahoo Finance,Twenty-session return ending at the close before reaction day
+volatility_20d,numeric_predictor,fraction per session,Yahoo Finance,Sample standard deviation of the previous 20 daily returns excluding reaction day
+spy_return_5d_before,numeric_predictor,fraction,Yahoo Finance,Five-session SPY return ending before reaction day
+previous_earnings_surprise_pct,numeric_predictor,percent,Alpha Vantage,Surprise at the preceding earnings announcement for this company
+prior_surprise_mean_4q,numeric_predictor,percent,Alpha Vantage,Mean surprise of the previous four reported earnings records; excludes current and same-date announcements
+prior_surprise_std_4q,numeric_predictor,percentage points,Alpha Vantage,Sample standard deviation of the previous four surprises; all four required
+prior_beat_rate_4q,numeric_predictor,fraction,Alpha Vantage,Fraction of the previous four reported events with strictly positive surprise; ties are not beats
+days_since_previous_earnings,numeric_predictor,calendar days,Alpha Vantage,Days since the preceding strictly earlier announcement
+stock_return_60d_before,numeric_predictor,fraction,Yahoo Finance,Sixty-session return ending before reaction day
+stock_volatility_60d_before,numeric_predictor,fraction per session,Yahoo Finance,Sample standard deviation of the previous 60 daily returns excluding reaction day
+market_beta_60d_before,numeric_predictor,ratio,Yahoo Finance,Stock/SPY return covariance divided by SPY return variance on the same 60 prior stock-session dates
+sector_relative_return_20d_before,numeric_predictor,fraction,Yahoo Finance,Prior 20-session stock return minus prior 20-session proxy ETF return
+reaction_day_market_adjusted_return,numeric_predictor,fraction,Yahoo Finance,Reaction-day stock return minus same-day SPY return
+reaction_day_sector_adjusted_return,numeric_predictor,fraction,Yahoo Finance,Reaction-day stock return minus same-day proxy ETF return
+vix_prior_close,numeric_predictor,index points,Cboe,Latest VIX close dated strictly before reaction day; rejected if more than seven calendar days old
+vix_change_5_sessions,numeric_predictor,fraction,Cboe,Five-observation VIX change ending on the selected prior VIX date
+vvix_prior_close,numeric_predictor,index points,Cboe,Latest VVIX close dated strictly before reaction day; rejected if more than seven calendar days old
+treasury_10y_lag7d,numeric_predictor,percent yield,Federal Reserve via FRED,Latest 10-year Treasury yield dated at least seven calendar days before reaction; reject if older than 14 days
+yield_curve_10y_minus_2y,numeric_predictor,percentage points,Federal Reserve via FRED,Lagged 10-year yield minus lagged 2-year yield; selected dates are retained separately
+vix_reaction_interaction,numeric_predictor,index points times fractional return,Derived,Prior VIX close multiplied by reaction-day stock return
+surprise_reaction_interaction,numeric_predictor,percent surprise times fractional return,Derived,Current announced surprise percentage multiplied by reaction-day stock return
+future_5d_return,target_never_predictor,fraction,Derived from Yahoo Finance adjusted closes,Stock adjusted close at fifth session after reaction divided by reaction close minus one
+spy_future_5d_return,target_never_predictor,fraction,Derived from Yahoo Finance adjusted closes,SPY return between the same reaction/end calendar dates
+market_adjusted_5d_return,target_never_predictor,fraction,Derived from Yahoo Finance adjusted closes,Stock target minus SPY target
+positive_return,target_never_predictor,binary,Derived from Yahoo Finance adjusted closes,One if the stock target is strictly positive; zero otherwise
+large_surprise_flag,audit_only,boolean,Derived from Alpha Vantage,Absolute current surprise exceeds 100 percent; retained
+small_estimate_flag,audit_only,boolean,Derived from Alpha Vantage,Absolute current estimated EPS below 0.05 USD; retained
+eps_difference_flag,audit_only,boolean,Derived from Alpha Vantage,Reported EPS minus estimated EPS differs from provider dollar surprise by more than 0.001 USD; retained

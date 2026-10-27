@@ -2,6 +2,16 @@
 
 Audited October 27, 2026. Research branch: `codex/dataset-quality-research`.
 
+**Implemented expansion:** the branch now includes a downloadable derived
+dataset with **1,714 complete events, 27 companies, 11 industry groups and 25
+numeric predictors**. It adds Cboe volatility indexes, Treasury yields, sector
+benchmarks and earnings history. Read [the current findings](EXPANDED_DATASET.md)
+or [open the dataset](../research/datasets/expanded_modeling_dataset.csv).
+The ten-company pilot below records the earlier comparison that motivated this
+larger implementation.
+
+## Earlier ten company pilot
+
 The best next pilot is to extend the existing companies to 2010–2025 and add
 carefully timed market context. The actual download-and-join audit produced
 **629 complete events, up from 400**, a 57% increase. A 1996–2025 pilot produced

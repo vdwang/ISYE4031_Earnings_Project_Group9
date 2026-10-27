@@ -1,0 +1,5 @@
+series,status,rows,columns,sha256,source_url
+VIX,cached_or_downloaded,9302,"DATE,OPEN,HIGH,LOW,CLOSE",8e67801e46bab11ab543ac8d575544db4e8cd6fd7e4c7e9dc419b498de8a77ff,https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv
+VVIX,cached_or_downloaded,5134,"DATE,VVIX",611efbe94b64aa31debb78cdc65cda51490b189d409e6c97580094ce1cb55ae9,https://cdn.cboe.com/api/global/us_indices/daily_prices/VVIX_History.csv
+DGS10,cached_or_downloaded,8087,"observation_date,DGS10",69c881314acbe5450e207ff683ab43bfe4bab4806e477ed4e10528433727f6e0,https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10&cosd=1995-01-01&coed=2025-12-31
+DGS2,cached_or_downloaded,8087,"observation_date,DGS2",d63adecb22cb9d26d60c81a78655634c848a359bb40c4aebee560c974f2e1d29,https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS2&cosd=1995-01-01&coed=2025-12-31

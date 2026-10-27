@@ -1,0 +1,5 @@
+source,min_age_calendar_days,max_age_calendar_days,missing_on_complete_events
+vix,1,5,0
+vvix,1,5,0
+dgs10,7,10,0
+dgs2,7,10,0

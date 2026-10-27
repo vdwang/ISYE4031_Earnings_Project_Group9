@@ -1,0 +1,31 @@
+ticker,sector,sector_etf,cohort
+AAPL,Technology,XLK,original
+MSFT,Technology,XLK,original
+NVDA,Technology,XLK,original
+AMZN,Consumer Discretionary,XLY,original
+META,Communication Services,XLC,original
+GOOGL,Communication Services,XLC,original
+JPM,Financials,XLF,original
+XOM,Energy,XLE,original
+JNJ,Health Care,XLV,original
+WMT,Consumer Staples,XLP,original
+BAC,Financials,XLF,expansion
+GS,Financials,XLF,expansion
+CVX,Energy,XLE,expansion
+COP,Energy,XLE,expansion
+PFE,Health Care,XLV,expansion
+MRK,Health Care,XLV,expansion
+PG,Consumer Staples,XLP,expansion
+KO,Consumer Staples,XLP,expansion
+HD,Consumer Discretionary,XLY,expansion
+MCD,Consumer Discretionary,XLY,expansion
+CAT,Industrials,XLI,expansion
+UNP,Industrials,XLI,expansion
+NUE,Materials,XLB,expansion
+FCX,Materials,XLB,expansion
+NEE,Utilities,XLU,expansion
+DUK,Utilities,XLU,expansion
+SPG,Real Estate,XLRE,expansion
+EQR,Real Estate,XLRE,expansion
+CSCO,Technology,XLK,expansion
+IBM,Technology,XLK,expansion

@@ -1,0 +1,4 @@
+analysis_split,events,companies
+exploratory_test,108,27
+train,1390,27
+validation,216,27
