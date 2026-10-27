@@ -1,0 +1,9 @@
+{
+  "volatility_cutoff_from_training_only": 0.01391430968606295,
+  "n_heldout_per_target": {
+    "future_5d_return": 120,
+    "market_adjusted_5d_return": 120
+  },
+  "raw_return_training_mean": 0.0015389505324367569,
+  "interpretation": "Descriptive checks of the fixed baseline; no tuning, exclusions, or independence-based p-values."
+}

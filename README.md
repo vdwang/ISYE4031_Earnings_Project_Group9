@@ -2,6 +2,12 @@
 
 ## Milestone 2
 
+Meeting 2 updates are on branch `Milestone2updates`: training-only outlier
+sensitivity, year/company/volatility diagnostics, a history-coverage audit and
+a separate audit of the suggested Kaggle source. The new packet is
+`output/docx/ISYE4031_Group9_Meeting2_Packet.docx`. See
+`reports/MEETING1_FEEDBACK.md` and `reports/DATA_EXPANSION_REVIEW.md`.
+
 The completed pilot analysis, baseline comparisons, diagnostics, four-page report,
 and reproducibility instructions are described in [MILESTONE2_README.md](MILESTONE2_README.md).
 After building the dataset, run `python run_milestone2.py` or open

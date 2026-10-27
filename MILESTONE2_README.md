@@ -5,12 +5,14 @@ Georgia Tech ISYE 4031, Fall 2026. Bill Nguyen, Sarah Wang, Cindy Le, Phoenix Mo
 The four-page report is `output/pdf/ISYE4031_Group9_Milestone2_Report.pdf`.
 The editable Word version is `output/docx/ISYE4031_Group9_Milestone2_Report.docx`.
 The three-page Meeting 1 packet is `output/docx/ISYE4031_Group9_Meeting1_Packet.docx`.
+The Meeting 2 packet is `output/docx/ISYE4031_Group9_Meeting2_Packet.docx`.
 The report text is `reports/ISYE4031_Group9_Milestone2_Word_Source.md`.
 `notebooks/02_milestone2_analysis.ipynb` displays the analysis and diagnostics.
 `reports/TA_MEETING_MATERIALS.md` contains progress notes and meeting questions.
-The analysis uses the existing cached snapshot; documents were revised October 21,
-2026. No TA feedback has been received or incorporated. Proposed task owners are
-explicitly labeled. The short contribution statements in
+The analysis uses the existing cached snapshot; the report and Meeting 2 packet
+were revised October 27, 2026. Meeting 1 notes supplied by the group are recorded
+in `reports/MEETING1_FEEDBACK.md`, with a response to each requested focus.
+Proposed task owners are explicitly labeled. The short contribution statements in
 `reports/TEAM_CONTRIBUTIONS.md` require group confirmation before submission.
 
 ## Obtain the original data
@@ -72,6 +74,7 @@ Optional editable Word-document rebuild (requires python-docx):
 
 ```powershell
 .\.venv\Scripts\python.exe -m pip install python-docx
+.\.venv\Scripts\python.exe reports/update_meeting2_sources.py
 .\.venv\Scripts\python.exe reports/build_word_documents.py
 ```
 
@@ -142,11 +145,48 @@ and fails on a mismatch above 1e-10. The present maximum difference is below 1e-
 | `training_influence.csv`, `coefficients.csv` | Cook's distance, leverage, standardized residuals and scaled coefficients |
 | `analysis_summary.json`, `source_manifest.json` | Report inputs, exact versions, source hashes |
 
-Three figures are in `figures/milestone2/`. All 400 observations remain in the
-exploration; no surprise tails are clipped. Cook's distance > 4/n and leverage
+Figures 01-03 are in `figures/milestone2/`; Meeting 2 adds figures 04-05. All 400
+observations remain in the primary exploration; no surprise tails are clipped.
+Cook's distance > 4/n and leverage
 > 2p/n are diagnostic screens, not deletion rules or hypothesis tests.
-Four unit tests cover event timing, future-price invariance, split-boundary label
-purging and keeping simultaneous prediction dates within a single period.
+Eight unit tests cover event timing, future-price invariance, split-boundary label
+purging, simultaneous dates, held-out metric units, target separation and
+training-only outlier transformations.
+
+## Meeting 2 additions
+
+The same `run_milestone2.py` command now also creates:
+
+- `outlier_sensitivity.csv` and `outlier_sensitivity_rules.json`: original OLS,
+  training-only exclusion of absolute current surprises above 100%, exclusion
+  of original training Cook's-distance flags above 4/n, and clipping current/prior
+  surprises to training 1st/99th percentiles. Every variant scores all 80 validation
+  and 40 test events. It never clips outcomes or deletes difficult test rows.
+- `large_surprise_events.csv`, `largest_training_influence.csv` and
+  `largest_holdout_errors.csv`: explicit source-review and diagnostic cases.
+- `performance_by_year.csv`, `performance_by_ticker.csv` and
+  `performance_by_volatility.csv`: group-level errors; the volatility cut uses
+  training median volatility only. Small company test samples limit conclusions.
+- `holdout_residual_summary.csv` and `leave_one_quarter_out.csv`: tail errors and
+  stability when a whole calendar quarter is omitted. The latter is a deterministic
+  check, not a significance test or confidence interval.
+- `history_coverage_audit.csv` and `earnings_coverage_by_year.csv`: cached-history
+  counts. There are 631 candidate earnings events in 2010-2025, not 631 validated
+  modeling rows; older price lookbacks and targets still need verification.
+- Figures `04_baseline_comparison.png` and `05_outlier_sensitivity.png` under
+  `figures/milestone2/`.
+
+The original full-data OLS remains primary. No sensitivity treatment consistently
+improves both later periods. These are checks on already inspected evaluation
+data, not an untouched assessment for subsequent model selection. No random
+sampling or stochastic estimator is used.
+
+The separate `audit_kaggle.py --download` command fetches only the summary and
+earnings files from version 7 of the suggested dataset; it does not fetch the
+approximately 2 GB price file or change the primary modeling data. The actual
+earnings file ends in June 2021 and has missing EPS and release-time values.
+Raw candidate files are ignored by Git and excluded from the submission ZIP.
+See `reports/DATA_EXPANSION_REVIEW.md` for source links, limitations and access.
 
 Raw-return OLS RMSE is 3.838 pp (validation) / 4.253 pp (2025), versus
 3.572 / 4.135 for the training mean. SPY-adjusted OLS is 3.085 / 3.606,

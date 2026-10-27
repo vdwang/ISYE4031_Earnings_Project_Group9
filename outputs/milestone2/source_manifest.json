@@ -40,6 +40,11 @@
     "bytes": 30492
   },
   {
+    "path": "data/raw/earnings/quarterly_earnings.csv",
+    "sha256": "3988b707cf4eeb892ba09c628927b61bbde51a64b1147769e457fca5c70bc9ed",
+    "bytes": 55110
+  },
+  {
     "path": "data/raw/earnings/WMT.json",
     "sha256": "ea506a97319743fc20a56c0ea76316e5716611f9eaaa13d2165f98351b41c97d",
     "bytes": 33368
@@ -50,69 +55,14 @@
     "bytes": 33735
   },
   {
-    "path": "data/raw/prices/AAPL.json",
-    "sha256": "6b42bf6ab34d9d5b04612afd6c2df343527eb0337fbd1e2ba384f5b4b0d19bbc",
-    "bytes": 84
-  },
-  {
-    "path": "data/raw/prices/AMZN.json",
-    "sha256": "cfa5ed48d390d270ae59006a2902f88e597d6053412214b70b3d388863627097",
-    "bytes": 84
-  },
-  {
-    "path": "data/raw/prices/GOOGL.json",
-    "sha256": "e519c87ed0cd9241b249d264a18fe0dc60a6e73dc21a52730c89ba374d0998f5",
-    "bytes": 85
-  },
-  {
-    "path": "data/raw/prices/JNJ.json",
-    "sha256": "1aee7a0264c315d1052ac1475be904522aeed27385472db7d88b53c2407e1c25",
-    "bytes": 83
-  },
-  {
-    "path": "data/raw/prices/JPM.json",
-    "sha256": "44f054de3d4121b55bc996affbe1fe11727992c5f3d3ddf14685f85e0276ed0e",
-    "bytes": 83
-  },
-  {
-    "path": "data/raw/prices/META.json",
-    "sha256": "c94a6b50e5ae6964f10f9614268aee4d8b1d8a84f922dec8fbbfe44139b72343",
-    "bytes": 84
-  },
-  {
-    "path": "data/raw/prices/MSFT.json",
-    "sha256": "813b834ea2040422940bc049f8f28befb142f6a7e1f67053b1012bcd9673d465",
-    "bytes": 84
-  },
-  {
-    "path": "data/raw/prices/NVDA.json",
-    "sha256": "3a858597c8b67a4a453d2b491182ddd36f3b69ebdcbf5dbc6d20dae59ddb0a6f",
-    "bytes": 84
-  },
-  {
-    "path": "data/raw/prices/SPY.json",
-    "sha256": "1fe6a52287adb25be875f9eb60b188e6ae1cfbba9f3a1f552a2dee9f5ec57745",
-    "bytes": 83
-  },
-  {
-    "path": "data/raw/prices/WMT.json",
-    "sha256": "ccb52364cac224865ad2bae795debdc626d26bec18dab96d561b8f6f042cbe47",
-    "bytes": 83
-  },
-  {
-    "path": "data/raw/prices/XOM.json",
-    "sha256": "6a0f35902b217a89420b8babf6509b7b1ba5a1757535755088fbe0a79df7ac0b",
-    "bytes": 83
-  },
-  {
-    "path": "data/raw/earnings/quarterly_earnings.csv",
-    "sha256": "3988b707cf4eeb892ba09c628927b61bbde51a64b1147769e457fca5c70bc9ed",
-    "bytes": 55110
-  },
-  {
     "path": "data/raw/prices/AAPL.csv",
     "sha256": "3a65827e6959ddfd9001c5d451d1fea2741d3e5d650291630a0f9e6dde6fc9a5",
     "bytes": 297550
+  },
+  {
+    "path": "data/raw/prices/AAPL.json",
+    "sha256": "6b42bf6ab34d9d5b04612afd6c2df343527eb0337fbd1e2ba384f5b4b0d19bbc",
+    "bytes": 84
   },
   {
     "path": "data/raw/prices/AMZN.csv",
@@ -120,9 +70,19 @@
     "bytes": 295160
   },
   {
+    "path": "data/raw/prices/AMZN.json",
+    "sha256": "cfa5ed48d390d270ae59006a2902f88e597d6053412214b70b3d388863627097",
+    "bytes": 84
+  },
+  {
     "path": "data/raw/prices/GOOGL.csv",
     "sha256": "cb08f25e888b495c5b67e0801e5188f8ee89d506c1d379ddd6ff5b59232a5774",
     "bytes": 300031
+  },
+  {
+    "path": "data/raw/prices/GOOGL.json",
+    "sha256": "e519c87ed0cd9241b249d264a18fe0dc60a6e73dc21a52730c89ba374d0998f5",
+    "bytes": 85
   },
   {
     "path": "data/raw/prices/JNJ.csv",
@@ -130,9 +90,19 @@
     "bytes": 292195
   },
   {
+    "path": "data/raw/prices/JNJ.json",
+    "sha256": "1aee7a0264c315d1052ac1475be904522aeed27385472db7d88b53c2407e1c25",
+    "bytes": 83
+  },
+  {
     "path": "data/raw/prices/JPM.csv",
     "sha256": "7f847453e91855ef94f8df30eadd4229d40afa58a2992ac4d2ed37e4eedf943a",
     "bytes": 292825
+  },
+  {
+    "path": "data/raw/prices/JPM.json",
+    "sha256": "44f054de3d4121b55bc996affbe1fe11727992c5f3d3ddf14685f85e0276ed0e",
+    "bytes": 83
   },
   {
     "path": "data/raw/prices/META.csv",
@@ -140,9 +110,19 @@
     "bytes": 292777
   },
   {
+    "path": "data/raw/prices/META.json",
+    "sha256": "c94a6b50e5ae6964f10f9614268aee4d8b1d8a84f922dec8fbbfe44139b72343",
+    "bytes": 84
+  },
+  {
     "path": "data/raw/prices/MSFT.csv",
     "sha256": "d0b22a8b7b16a977a1392b08b24e878c74ba1f5b4cdb3575441236069dfd1d64",
     "bytes": 294344
+  },
+  {
+    "path": "data/raw/prices/MSFT.json",
+    "sha256": "813b834ea2040422940bc049f8f28befb142f6a7e1f67053b1012bcd9673d465",
+    "bytes": 84
   },
   {
     "path": "data/raw/prices/NVDA.csv",
@@ -150,9 +130,19 @@
     "bytes": 303879
   },
   {
+    "path": "data/raw/prices/NVDA.json",
+    "sha256": "3a858597c8b67a4a453d2b491182ddd36f3b69ebdcbf5dbc6d20dae59ddb0a6f",
+    "bytes": 84
+  },
+  {
     "path": "data/raw/prices/SPY.csv",
     "sha256": "8e9bfcb6f9ee9108499afc32e94916bc8a3f4880b2b09a5c214d8903e48551ec",
     "bytes": 293448
+  },
+  {
+    "path": "data/raw/prices/SPY.json",
+    "sha256": "1fe6a52287adb25be875f9eb60b188e6ae1cfbba9f3a1f552a2dee9f5ec57745",
+    "bytes": 83
   },
   {
     "path": "data/raw/prices/WMT.csv",
@@ -160,8 +150,18 @@
     "bytes": 297397
   },
   {
+    "path": "data/raw/prices/WMT.json",
+    "sha256": "ccb52364cac224865ad2bae795debdc626d26bec18dab96d561b8f6f042cbe47",
+    "bytes": 83
+  },
+  {
     "path": "data/raw/prices/XOM.csv",
     "sha256": "217b710afd4c5451452e74278c001c951e6114e8c323747b9f7aaf127054cda7",
     "bytes": 292019
+  },
+  {
+    "path": "data/raw/prices/XOM.json",
+    "sha256": "6a0f35902b217a89420b8babf6509b7b1ba5a1757535755088fbe0a79df7ac0b",
+    "bytes": 83
   }
 ]

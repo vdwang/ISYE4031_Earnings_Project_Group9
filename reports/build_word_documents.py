@@ -1,6 +1,8 @@
 """Build editable report and Meeting 1 documents from the existing analysis."""
 
 from pathlib import Path
+import csv
+import json
 import re
 
 from docx import Document
@@ -76,9 +78,9 @@ def text(doc, value, style=None):
     return p
 
 
-def title(doc, value, subtitle):
+def title(doc, value, subtitle, prepared="October 27 2026"):
     text(doc, value, "Title")
-    text(doc, subtitle + "\nGeorgia Tech ISYE 4031 Fall 2026 Group 9\n" + NAMES + "\nPrepared October 21 2026", "Subtitle")
+    text(doc, subtitle + "\nGeorgia Tech ISYE 4031 Fall 2026 Group 9\n" + NAMES + "\nPrepared " + prepared, "Subtitle")
 
 
 def heading(doc, value):
@@ -150,7 +152,6 @@ def figure(doc, filename, caption, width=6.65):
 
 def revised_report():
     raw = (ROOT / "reports/ISYE4031_Group9_Milestone2_Word_Source.md").read_text(encoding="utf-8")
-    assert "feedback" not in raw.lower()
     return raw
 
 
@@ -177,9 +178,10 @@ def build_report():
         elif chunk.startswith("|"):
             rows = [[v.strip() for v in row.strip().strip("|").split("|")] for row in chunk.splitlines()]
             rows.pop(1)
-            widths = {2: [3.2, 4.0], 3: [1.15, 2.8, 3.25], 6: [1.75, 1.3, .4, 1.2, 1.3, 1.25]}[len(rows[0])]
+            widths = {2: [3.2, 4.0], 3: [1.15, 2.8, 3.25], 4: [3.1, .8, 1.65, 1.65],
+                5: [1.1, 1.25, .35, 2.2, 2.3], 6: [1.75, 1.3, .4, 1.2, 1.3, 1.25]}[len(rows[0])]
             table(doc, rows, widths)
-        elif chunk.startswith("Table 1."):
+        elif re.match(r"Table \d+\.", chunk):
             text(doc, chunk, "Caption")
         elif chunk.startswith("**Reproducibility and references."):
             for line in chunk.splitlines():
@@ -198,7 +200,7 @@ def build_report():
 
 def build_meeting1():
     doc = configure()
-    title(doc, "Milestone 2 Meeting 1 Preparation", "Data pipeline and initial exploratory evidence")
+    title(doc, "Milestone 2 Meeting 1 Preparation", "Data pipeline and initial exploratory evidence", "October 21 2026")
     text(doc, "**Meeting purpose.** We will present the usable dataset, explain the prediction timing and data-quality concerns, and agree on the baseline and evaluation plan. The pilot contains 400 complete earnings events. Initial relationships are weak, so the main question is whether a regression can improve on a simple constant forecast in later periods.")
     text(doc, "**Meeting details.** Thursday, October 22, 2026, during 2:00-3:00 p.m. Eastern at George Tower 802 Collab. Group 9 should plan for approximately eight minutes. This packet covers the data and exploratory work for Meeting 1; the baseline results and residual diagnostics are in the full Milestone 2 report.")
     heading(doc, "Research question and intended decision")
@@ -259,12 +261,80 @@ def build_meeting1():
     return path
 
 
+def build_meeting2():
+    doc = configure()
+    title(doc, "Milestone 2 Meeting 2 Preparation", "Baseline results outlier sensitivity and report readiness")
+    def rows(name):
+        with (ROOT / "outputs/milestone2" / name).open(newline="", encoding="utf-8") as stream:
+            return list(csv.DictReader(stream))
+    metrics = rows("baseline_metrics.csv")
+    sensitivity = rows("outlier_sensitivity.csv")
+    quality = json.loads((ROOT / "outputs/milestone2/analysis_summary.json").read_text())
+    history = rows("history_coverage_audit.csv")
+    candidate = json.loads((ROOT / "outputs/milestone2/kaggle_candidate_audit.json").read_text())
+    text(doc, "**Main finding.** The original regression does not consistently improve on the training-mean forecast. Removing extreme-surprise or influential training events changes the errors but does not produce a consistent improvement across validation and 2025. The full-data baseline remains the primary model.")
+    text(doc, "**Meeting details.** Group 9's second check-in is scheduled for Thursday, October 29, 2026, during 2:00-3:00 p.m. Eastern at George Tower 802 Collab. Bring this packet, the updated four-page report, runnable code and the result tables. The submission deadline is October 30 at 11:59 p.m. Eastern.")
+    heading(doc, "Response to Meeting 1")
+    text(doc, "The notes supplied October 27 ask for more history per company, outlier identification and sensitivity, and a clearer explanation of data quality and informativeness. This branch adds large-surprise and influential-event tables, training-only sensitivity comparisons, errors by year/company/volatility, calendar-quarter stability checks, an older-history audit, and an audit of the group's proposed Kaggle dataset. The main sample remains 400 verified events; no expansion or synthetic data is claimed.")
+    heading(doc, "Question model and evaluation")
+    text(doc, "We predict signed stock return over the five sessions after reaction-day close. Reaction day is the first trading day strictly after the report date; the initial jump is excluded. OLS uses 10 earnings, reaction, volume, momentum, market and volatility predictors plus an intercept. Redundant dollar EPS surprise is omitted. Scaling fits on 2016-2022 only (280 events); the fixed model is evaluated on 2023-2024 (80) and the inspected 2025 exploratory test (40). Boundary-crossing labels are purged; none cross here.")
+    text(doc, "The training-mean forecast predicts the same value every time: +0.154% for raw return and -0.213% for SPY-adjusted return. A zero forecast predicts no change. MAE is average absolute error; RMSE gives larger errors more weight. Both use percentage points (pp), not percentages of the error. Lower is better.")
+    baseline = [["Target and period", "n", "OLS MAE / RMSE", "Mean MAE / RMSE"]]
+    for target, name in [("future_5d_return", "Raw"), ("market_adjusted_5d_return", "SPY adjusted")]:
+        for split, period in [("validation", "2023-24"), ("test", "2025")]:
+            selected = [next(r for r in metrics if r["target"] == target and r["split"] == split and r["model"] == model)
+                for model in ["OLS", "Training mean"]]
+            baseline.append([name + " " + period, selected[0]["n"], *[f"{float(r['mae_pp']):.3f} / {float(r['rmse_pp']):.3f}" for r in selected]])
+    table(doc, baseline, [2.0, .4, 2.4, 2.4])
+    text(doc, "Table 1. Errors in pp. Raw OLS is worse than the mean in both periods. Adjusted OLS is worse in validation and slightly better in 2025. Raw direction accuracy is 57.5%/55.0%, versus 57.5%/60.0% for always predicting a positive return. The full CSV also includes zero forecasts and R-squared.", "Caption")
+    doc.add_page_break()
+    heading(doc, "Potential outliers and sensitivity")
+    text(doc, "Seven observations have absolute earnings surprise over 100%, all in training. Five are AMZN, one XOM and one WMT. These are flags for source review, not proof of erroneous observations. XOM's 960% surprise has estimated EPS of $0.05, illustrating the effect of a small denominator. The original raw model also has 17 training Cook's-distance flags above 4/n; the largest is AMZN April 28, 2022 (0.191). The adjusted model has 18 flags.")
+    large = [["Company", "Reported date", "Surprise (%)"]]
+    for event in rows("large_surprise_events.csv"):
+        large.append([event["ticker"], event["reported_date"][:10], f"{float(event['earnings_surprise_pct']):.2f}"])
+    table(doc, large, [1.4, 2.9, 2.9])
+    text(doc, "We tested three alternatives to original OLS: exclude current surprise above 100% in absolute value from training; exclude original-fit Cook's-distance training flags; and clip current/prior surprise to training 1st/99th percentiles. Every treatment keeps all 80 validation and 40 test events. Cutoffs, clipping and scaling use training data only. Outcomes are never clipped.")
+    treatment = [["Raw training treatment", "Removed", "2023-24 RMSE", "2025 RMSE"]]
+    names = [("Original OLS", "Original OLS"), ("Exclude surprise over 100 pct", "Large-surprise exclusion"),
+        ("Exclude influential training events", "Influence exclusion"),
+        ("Clip surprise to training 1st and 99th pct", "Surprise clipping")]
+    for variant, label in names:
+        selected = [next(r for r in sensitivity if r["target"] == "future_5d_return" and r["split"] == split and r["variant"] == variant)
+            for split in ["validation", "test"]]
+        treatment.append([label, selected[0]["n_train_excluded"], *[f"{float(r['rmse_pp']):.3f}" for r in selected]])
+    table(doc, treatment, [2.9, .8, 1.75, 1.75])
+    figure(doc, "05_outlier_sensitivity.png", "Figure 1. Sensitivity to training treatments on fixed evaluation sets. Dashed lines show training-mean RMSE; lower is better.", width=6.3)
+    text(doc, "Surprise exclusion helps validation and hurts 2025. Influence exclusion helps 2025 and hurts validation. Clipping also has mixed effects. The adjusted-target comparison tells the same overall story: no treatment is consistently better across both later periods. These are sensitivity checks, not a new untouched test or grounds for selecting the most favorable result.")
+    doc.add_page_break()
+    heading(doc, "Residual evidence and preliminary answer")
+    figure(doc, "03_holdout_residuals.png", "Figure 2. Raw-return errors versus predicted return and date. Residual means observed minus predicted; large errors remain.", width=6.4)
+    text(doc, "Raw absolute errors exceed 5 pp in 16/80 validation events and 9/40 test events. AAPL July 31, 2025 returns +13.326% versus -0.649% predicted, a 13.975 pp miss. Errors are not a series of independent experiments: companies repeat and 597 target-window pairs overlap. Calendar-quarter deletion and group tables describe stability but do not establish statistical significance. The evidence supports weak predictive usefulness, not deployment or causal claims.")
+    heading(doc, "Data history and the Kaggle candidate")
+    potential = sum(int(r["potential_events_2010_2025"]) for r in history)
+    text(doc, f"Existing earnings caches contain 675 pre-2016 records and {potential} candidate events in 2010-2025, with one missing an earnings value. Older price lookbacks and targets remain unvalidated; these are not additional modeling rows. Extend history per company first, then broaden companies with a documented historical selection rule.")
+    text(doc, f"The proposed Kaggle version 7 summary covers {candidate['summary_rows']:,} symbols. Its {candidate['earnings_rows']:,} earnings rows end June 14, 2021; {candidate['earnings_missing_cells']['eps_est']:,} lack estimated EPS and {candidate['earnings_missing_cells']['release_time']:,} lack release-time labels. Pre/post-market labels could help after validation, but the dataset cannot supply 2023-2025 testing. The large price file and reuse terms need review. It is a separate candidate audit, not part of this model.")
+    heading(doc, "Remaining revisions and proposed owners")
+    table(doc, [["Member", "Proposed next task"],
+        ["Bill Nguyen", "Review year/company errors and rolling evaluation plan"],
+        ["Sarah Wang", "Review large surprises, influence flags and sensitivity results"],
+        ["Cindy Le", "Validate deeper histories and release-time availability"],
+        ["Phoenix Moore", "Review interpretation, limitations and expansion rationale"],
+        ["Victor Wang", "Verify reruns, documentation and final package"]], [1.3, 5.9])
+    text(doc, "Confirm each member's actual completed work and agreed owners before submission. For Milestone 3, prioritize rolling evaluation, dependence-aware uncertainty and simple regularized or longitudinal models. More rows or outlier removal should not be used just to obtain favorable significance.")
+    text(doc, "**Questions for the TA.** Are these training-only sensitivity rules appropriate? Is deeper Alpha Vantage history preferable to the older Kaggle candidate? Which dependence-aware inference and longitudinal approach best matches the course's scope?")
+    text(doc, "**Reproduce.** Run .venv\\Scripts\\python.exe run_pipeline.py, then .venv\\Scripts\\python.exe run_milestone2.py. Optional: audit_kaggle.py --download. See MILESTONE2_README.md, reports/MEETING1_FEEDBACK.md and reports/DATA_EXPANSION_REVIEW.md. Sources: course brief; group-supplied Meeting 1 notes; Alpha Vantage and Yahoo/yfinance; tsaustin Kaggle version 7. OpenAI Codex assisted with analysis, code and writing; the team must review the work and follow syllabus disclosure rules.", "Caption")
+    path = OUT / "ISYE4031_Group9_Meeting2_Packet.docx"
+    doc.core_properties.title = "Milestone 2 Meeting 2 Preparation"
+    doc.save(path)
+    return path
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    for path in [build_report(), build_meeting1()]:
+    for path in [build_report(), build_meeting2()]:
         check = Document(path)
         all_text = "\n".join(p.text for p in check.paragraphs) + "\n".join(c.text for t in check.tables for r in t.rows for c in r.cells)
-        assert "feedback" not in all_text.lower()
         assert len(check.inline_shapes) == (3 if "Report" in path.name else 2)
         print(path)
 

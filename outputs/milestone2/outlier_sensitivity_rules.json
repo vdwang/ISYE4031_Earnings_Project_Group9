@@ -1,0 +1,91 @@
+{
+  "large_surprise_rule": "abs(current earnings surprise percentage) > 100; training rows only",
+  "influence_rule": "Cook distance > 4/n in the original training fit; target-specific",
+  "clip_rule": "Current and prior surprise clipped to training 1st/99th percentiles; no outcome clipping",
+  "evaluation_rule": "All 80 validation and all 40 test events retained for every variant",
+  "interpretation": "Descriptive sensitivity; the previously inspected 2025 sample is not a fresh test",
+  "fits": [
+    {
+      "target": "future_5d_return",
+      "variant": "Original OLS",
+      "n_train_original": 280,
+      "clip_limits": {},
+      "n_train_used": 280,
+      "n_train_excluded": 0
+    },
+    {
+      "target": "future_5d_return",
+      "variant": "Exclude surprise over 100 pct",
+      "n_train_original": 280,
+      "clip_limits": {},
+      "n_train_used": 273,
+      "n_train_excluded": 7
+    },
+    {
+      "target": "future_5d_return",
+      "variant": "Exclude influential training events",
+      "n_train_original": 280,
+      "clip_limits": {},
+      "n_train_used": 263,
+      "n_train_excluded": 17
+    },
+    {
+      "target": "future_5d_return",
+      "variant": "Clip surprise to training 1st and 99th pct",
+      "n_train_original": 280,
+      "clip_limits": {
+        "earnings_surprise_pct": [
+          -80.928601,
+          247.16669299999216
+        ],
+        "previous_earnings_surprise_pct": [
+          -56.600616,
+          273.49999999999284
+        ]
+      },
+      "n_train_used": 280,
+      "n_train_excluded": 0
+    },
+    {
+      "target": "market_adjusted_5d_return",
+      "variant": "Original OLS",
+      "n_train_original": 280,
+      "clip_limits": {},
+      "n_train_used": 280,
+      "n_train_excluded": 0
+    },
+    {
+      "target": "market_adjusted_5d_return",
+      "variant": "Exclude surprise over 100 pct",
+      "n_train_original": 280,
+      "clip_limits": {},
+      "n_train_used": 273,
+      "n_train_excluded": 7
+    },
+    {
+      "target": "market_adjusted_5d_return",
+      "variant": "Exclude influential training events",
+      "n_train_original": 280,
+      "clip_limits": {},
+      "n_train_used": 262,
+      "n_train_excluded": 18
+    },
+    {
+      "target": "market_adjusted_5d_return",
+      "variant": "Clip surprise to training 1st and 99th pct",
+      "n_train_original": 280,
+      "clip_limits": {
+        "earnings_surprise_pct": [
+          -80.928601,
+          247.16669299999216
+        ],
+        "previous_earnings_surprise_pct": [
+          -56.600616,
+          273.49999999999284
+        ]
+      },
+      "n_train_used": 280,
+      "n_train_excluded": 0
+    }
+  ]
+}

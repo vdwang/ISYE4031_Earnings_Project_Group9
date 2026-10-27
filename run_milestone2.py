@@ -21,6 +21,8 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
 from src.config import FEATURE_COLUMNS, ROOT, TICKERS
+from src.diagnostics import export_meeting2_diagnostics
+from src.sensitivity import export_outlier_sensitivity, export_history_audit
 
 OUT = ROOT / "outputs" / "milestone2"
 FIG = ROOT / "figures" / "milestone2"
@@ -274,6 +276,9 @@ def main():
     pd.DataFrame(split_rows).to_csv(OUT / "split_summary.csv", index=False)
     metrics, predictions, diagnostics, models = fit_baselines(splits)
     figures(data, predictions)
+    export_meeting2_diagnostics(data, predictions, diagnostics, metrics, OUT, FIG)
+    export_outlier_sensitivity(data, splits, MODEL_FEATURES, TARGETS, diagnostics, OUT, FIG)
+    export_history_audit(pd.read_csv(ROOT / "data/raw/earnings/quarterly_earnings.csv"), OUT)
     yearly = data.assign(year=data.reaction_day.dt.year).groupby("year").agg(n=("ticker", "size"),
         mean_return=("future_5d_return", "mean"), sd_return=("future_5d_return", "std"), positive_share=("positive_return", "mean"))
     yearly.to_csv(OUT / "year_summary.csv")
@@ -283,7 +288,9 @@ def main():
     correlations = data[FEATURE_COLUMNS + TARGETS].corr()
     correlations.to_csv(OUT / "correlations.csv")
     # Actual source-file timestamps are not asserted to be retrieval timestamps.
-    files = sorted((ROOT / "data/raw").rglob("*.json")) + sorted((ROOT / "data/raw").rglob("*.csv"))
+    # Candidate-source audits are separate from the sources used in this model.
+    files = sorted(p for folder in ["earnings", "prices"]
+                   for p in (ROOT / "data/raw" / folder).iterdir() if p.suffix in {".json", ".csv"})
     manifest = [{"path": str(p.relative_to(ROOT)).replace("\\", "/"),
         "sha256": hashlib.sha256(p.read_bytes()).hexdigest(), "bytes": p.stat().st_size} for p in files]
     (OUT / "source_manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")

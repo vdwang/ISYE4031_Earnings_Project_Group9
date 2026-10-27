@@ -113,7 +113,42 @@ display(influence.loc[influence['target'] == 'future_5d_return']
         .sort_values('cooks_distance', ascending=False).head(10).round(4))
 display(pd.DataFrame(summary['diagnostics']).T)
 """)
-    md("""## Preliminary answer and Milestone 3 priorities
+    md("""## Meeting 2 diagnostics and the response to Meeting 1
+The TA asked for longer histories per company, large-surprise and influential
+event checks, sensitivity to outlier treatment, and a more informative dataset.
+The primary baseline and 400 observations are preserved. All sensitivity
+variants use training-only cutoffs and score all 80 validation and 40 test events.
+No held-out outcomes are clipped or selectively removed. See
+`reports/MEETING1_FEEDBACK.md` for the action record.
+""")
+    code("""display(Image(filename=str(FIG / '04_baseline_comparison.png')))
+display(pd.read_csv(OUT / 'holdout_residual_summary.csv').round(4))
+display(pd.read_csv(OUT / 'large_surprise_events.csv'))
+display(pd.read_csv(OUT / 'outlier_sensitivity.csv').round(4))
+display(Image(filename=str(FIG / '05_outlier_sensitivity.png')))
+display(pd.read_csv(OUT / 'performance_by_year.csv').round(4))
+display(pd.read_csv(OUT / 'performance_by_volatility.csv').round(4))
+display(pd.read_csv(OUT / 'leave_one_quarter_out.csv').round(4))
+display(pd.read_csv(OUT / 'history_coverage_audit.csv'))
+if (OUT / 'kaggle_candidate_audit.json').exists():
+    candidate = json.loads((OUT / 'kaggle_candidate_audit.json').read_text())
+    display(pd.Series({k: candidate[k] for k in [
+        'summary_rows', 'earnings_rows', 'earnings_first_date', 'earnings_last_date',
+        'events_with_both_eps_values', 'events_after_2021', 'main_model_uses_candidate']}))
+""")
+    md("""Removing large-surprise training rows helps raw validation errors but worsens
+2025. Influence exclusion helps 2025 but worsens validation. Clipping is also
+mixed; no alternative consistently improves both periods. The original baseline
+therefore remains primary. Group/quarter summaries are descriptive stability
+checks, not significance tests under an independence assumption.
+
+The history audit counts 631 candidate earnings events in 2010-2025; older
+price lookbacks, lagged surprises and targets have not yet been validated.
+The separately audited Kaggle version 7 earnings end in June 2021 and have
+substantial missing estimates and release labels. It was not merged into the
+primary dataset. See `reports/DATA_EXPANSION_REVIEW.md`.
+
+## Preliminary answer and Milestone 3 priorities
 Weak predictor associations did not produce consistent improvements over naive
 forecasts. The 10-company pilot is not ready for a trading application. Repeated
 companies, 597 overlapping target-window pairs and retrospectively revised data
@@ -134,10 +169,10 @@ tradable entry rule, spreads/costs and evidence of practical benefit.
 5. How should rolling validation and uncertainty handle overlapping market windows?
 
 Milestone 1 contributions are described in the supplied `ISYE 4031 Project.pdf`.
-No TA feedback has been received or incorporated. Confirm each member's actual
-Milestone 2 work; see `reports/TEAM_CONTRIBUTIONS.md` and
-`reports/TA_MEETING_MATERIALS.md`. Source documentation and exact run instructions
-are in `MILESTONE2_README.md`.
+Meeting 1 notes supplied October 27 are recorded in `reports/MEETING1_FEEDBACK.md`.
+Confirm each member's actual Milestone 2 work; see `reports/TEAM_CONTRIBUTIONS.md`
+and `reports/MEETING2_PROGRESS_NOTE.md`. Source documentation and exact run
+instructions are in `MILESTONE2_README.md`.
 """)
     notebook = nbf.v4.new_notebook(cells=cells, metadata={
         "kernelspec": {"display_name": "ISYE 4031 Milestone 2", "language": "python", "name": "isye4031-milestone2"},

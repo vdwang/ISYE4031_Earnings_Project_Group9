@@ -1,0 +1,11 @@
+ticker,cached_earnings_records,earliest_reported_date,latest_reported_date,pre2016_earnings_records,events_2016_2025,potential_events_2010_2025,extended_events_missing_any_earnings_value,status
+AAPL,122,1996-04-17,2026-07-30,79,40,64,0,"Counts only; older price lookbacks/targets, lagged surprises and release timing not yet validated"
+AMZN,117,1997-07-10,2026-07-30,74,40,64,0,"Counts only; older price lookbacks/targets, lagged surprises and release timing not yet validated"
+GOOGL,88,2004-10-21,2026-07-22,45,40,64,0,"Counts only; older price lookbacks/targets, lagged surprises and release timing not yet validated"
+JNJ,122,1996-04-16,2026-07-15,79,40,64,0,"Counts only; older price lookbacks/targets, lagged surprises and release timing not yet validated"
+JPM,122,1996-04-16,2026-07-14,79,40,64,0,"Counts only; older price lookbacks/targets, lagged surprises and release timing not yet validated"
+META,58,2012-05-30,2026-07-29,15,40,55,1,"Counts only; older price lookbacks/targets, lagged surprises and release timing not yet validated"
+MSFT,122,1996-04-18,2026-07-29,79,40,64,0,"Counts only; older price lookbacks/targets, lagged surprises and release timing not yet validated"
+NVDA,110,1999-05-18,2026-08-26,67,40,64,0,"Counts only; older price lookbacks/targets, lagged surprises and release timing not yet validated"
+WMT,122,1996-05-14,2026-08-20,79,40,64,0,"Counts only; older price lookbacks/targets, lagged surprises and release timing not yet validated"
+XOM,122,1996-04-22,2026-07-31,79,40,64,0,"Counts only; older price lookbacks/targets, lagged surprises and release timing not yet validated"

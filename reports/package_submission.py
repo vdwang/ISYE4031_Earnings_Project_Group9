@@ -10,7 +10,7 @@ OUTPUT = ROOT / "output/ISYE4031_Group9_Milestone2_Code.zip"
 def main():
     files = [ROOT / name for name in [
         "README.md", "MILESTONE2_README.md", "requirements.txt", "requirements-milestone2.txt",
-        ".env.example", ".gitignore", "run_pipeline.py", "run_milestone2.py", "data/README.md",
+        ".env.example", ".gitignore", "run_pipeline.py", "run_milestone2.py", "audit_kaggle.py", "data/README.md",
     ]]
     for folder, pattern in [("src", "*.py"), ("tests", "*.py"), ("notebooks", "*.ipynb"),
                             ("reports", "*.py"), ("reports", "*.md"),

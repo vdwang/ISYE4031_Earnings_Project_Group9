@@ -18,7 +18,7 @@ def main() -> None:
     prices = download_prices(PRICE_TICKERS, refresh=args.refresh)
     events, counts = build_events(earnings, prices)
     clean_and_save(events, counts)
-    print("Pipeline complete. Open notebooks/01_preliminary_analysis.ipynb for plots and baseline.")
+    print("Pipeline complete. Run python run_milestone2.py for plots, baselines and diagnostics.")
 
 
 if __name__ == "__main__":

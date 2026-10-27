@@ -1,0 +1,60 @@
+{
+  "dataset": "tsaustin/us-historical-stock-prices-with-earnings-data",
+  "version_requested": 7,
+  "audit_date": "2026-10-27",
+  "summary_rows": 7786,
+  "earnings_rows": 168603,
+  "summary_columns": [
+    "symbol",
+    "total_prices",
+    "stock_from_date",
+    "stock_to_date",
+    "total_earnings",
+    "earnings_from_date",
+    "earnings_to_date"
+  ],
+  "earnings_columns": [
+    "symbol",
+    "date",
+    "qtr",
+    "eps_est",
+    "eps",
+    "release_time"
+  ],
+  "earnings_missing_cells": {
+    "symbol": 0,
+    "date": 0,
+    "qtr": 1004,
+    "eps_est": 57256,
+    "eps": 32387,
+    "release_time": 60203
+  },
+  "earnings_exact_duplicate_rows": 0,
+  "earnings_duplicate_symbol_date_keys": 0,
+  "earnings_first_date": "2009-04-16",
+  "earnings_last_date": "2021-06-14",
+  "invalid_earnings_dates": 0,
+  "events_with_both_eps_values": 110994,
+  "zero_eps_estimates": 774,
+  "release_time_counts": {
+    "missing": 60203,
+    "post": 57918,
+    "pre": 50482
+  },
+  "events_after_2021": 0,
+  "main_model_uses_candidate": false,
+  "price_file_downloaded": false,
+  "license_status": "Dataset page lists license as Unknown; redistribution permission not established",
+  "files": [
+    {
+      "name": "dataset_summary.csv",
+      "sha256": "701e1071d1b5d2feb570e6a479b4e817cff0866d2a24fffa442a7e11a5cf276e",
+      "bytes": 514282
+    },
+    {
+      "name": "earnings_latest.csv",
+      "sha256": "f26e68e8d0d0d86418f955d874c03762fa9cc824258632312b3230346cc44bb7",
+      "bytes": 8877271
+    }
+  ]
+}
