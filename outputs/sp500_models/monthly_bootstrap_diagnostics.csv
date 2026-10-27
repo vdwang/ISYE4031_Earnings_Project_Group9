@@ -1,0 +1,7 @@
+analysis,split,model,calendar_month_clusters,metric,point_gain,lower_95,upper_95
+future_5d_return,exploratory_test,OLS core 8,12,RMSE gain vs training mean in pp; positive favors model,0.037669696711500195,-0.0767081855311829,0.16422711219814048
+future_5d_return,validation,OLS core 8,24,RMSE gain vs training mean in pp; positive favors model,0.015341618079315472,-0.009107191670169063,0.039865540164891286
+market_adjusted_5d_return,exploratory_test,OLS core 8,12,RMSE gain vs training mean in pp; positive favors model,-0.004461356563096458,-0.03793011378219279,0.035030492253550836
+market_adjusted_5d_return,validation,OLS core 8,24,RMSE gain vs training mean in pp; positive favors model,0.0008082530172828783,-0.011247219742200765,0.01236403166952029
+positive_return_classification,exploratory_test,Logistic regression 25,12,Accuracy gain vs training majority in percentage points,0.2044989775051125,-6.769098912058458,6.449629378978349
+positive_return_classification,validation,Logistic regression 25,24,Accuracy gain vs training majority in percentage points,-1.8833849329205368,-7.856878574652874,2.467541565477301

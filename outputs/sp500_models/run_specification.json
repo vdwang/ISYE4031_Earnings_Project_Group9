@@ -1,0 +1,87 @@
+{
+  "started_at_utc": "2026-10-27T23:22:24.859390+00:00",
+  "dataset_sha256": "07fd49a9b79b1ad5a964354dc2afdafd9b96224ff4edcd5367d1174baa335c9f",
+  "split_counts": {
+    "train": 22663,
+    "validation": 3876,
+    "exploratory_test": 1956
+  },
+  "purged_rows": 1,
+  "features": [
+    "earnings_surprise_pct",
+    "reaction_day_return",
+    "abnormal_volume",
+    "return_5d_before",
+    "return_20d_before",
+    "volatility_20d",
+    "spy_return_5d_before",
+    "previous_earnings_surprise_pct",
+    "prior_surprise_mean_4q",
+    "prior_surprise_std_4q",
+    "prior_beat_rate_4q",
+    "days_since_previous_earnings",
+    "stock_return_60d_before",
+    "stock_volatility_60d_before",
+    "market_beta_60d_before",
+    "sector_relative_return_20d_before",
+    "reaction_day_market_adjusted_return",
+    "reaction_day_sector_adjusted_return",
+    "vix_prior_close",
+    "vix_change_5_sessions",
+    "vvix_prior_close",
+    "treasury_10y_lag7d",
+    "yield_curve_10y_minus_2y",
+    "vix_reaction_interaction",
+    "surprise_reaction_interaction"
+  ],
+  "core_features": [
+    "earnings_surprise_pct",
+    "reaction_day_return",
+    "abnormal_volume",
+    "return_5d_before",
+    "return_20d_before",
+    "volatility_20d",
+    "spy_return_5d_before",
+    "previous_earnings_surprise_pct"
+  ],
+  "regression_models": [
+    "Training mean",
+    "Zero",
+    "OLS core 8",
+    "OLS expanded 25",
+    "Ridge 25",
+    "Clipped Ridge 25",
+    "Gradient boosting 25"
+  ],
+  "ridge_alpha_grid": [
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "logistic_C_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "tuning": "Pooled squared error for Ridge; log loss for logistic; purged rolling folds 2017-18, 2019-20, 2021-22 within training only",
+  "clipping": "Predictors clipped to fit-sample 1st/99th percentiles; outcomes and held-out rows never clipped or removed",
+  "boosting": {
+    "max_iter": 150,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 7,
+    "max_depth": 3,
+    "min_samples_leaf": 100,
+    "l2_regularization": 10.0,
+    "early_stopping": false,
+    "random_state": 4031
+  },
+  "fit_policy": "Fit through 2022 only; no validation/test refit; 2025 remains exploratory",
+  "package_versions": {
+    "pandas": "2.3.3",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1"
+  }
+}

@@ -1,0 +1,167 @@
+target,model,feature,coefficient_pp_per_training_sd
+future_5d_return,OLS core 8,earnings_surprise_pct,-0.0491290373748927
+future_5d_return,OLS core 8,reaction_day_return,-0.07655315503075905
+future_5d_return,OLS core 8,abnormal_volume,-0.08308543190757667
+future_5d_return,OLS core 8,return_5d_before,-0.013478335867713897
+future_5d_return,OLS core 8,return_20d_before,-0.03907637498433333
+future_5d_return,OLS core 8,volatility_20d,0.2936156599137539
+future_5d_return,OLS core 8,spy_return_5d_before,-0.08118619263463984
+future_5d_return,OLS core 8,previous_earnings_surprise_pct,0.025578444668825192
+future_5d_return,OLS expanded 25,earnings_surprise_pct,-0.048862236824127575
+future_5d_return,OLS expanded 25,reaction_day_return,-0.046294348581819446
+future_5d_return,OLS expanded 25,abnormal_volume,-0.028944431122977073
+future_5d_return,OLS expanded 25,return_5d_before,-0.036254356434774565
+future_5d_return,OLS expanded 25,return_20d_before,0.030491205360206476
+future_5d_return,OLS expanded 25,volatility_20d,0.3257133966651388
+future_5d_return,OLS expanded 25,spy_return_5d_before,0.05808363249460977
+future_5d_return,OLS expanded 25,previous_earnings_surprise_pct,-0.011576143482165558
+future_5d_return,OLS expanded 25,prior_surprise_mean_4q,0.08147419220887096
+future_5d_return,OLS expanded 25,prior_surprise_std_4q,0.039292220441738954
+future_5d_return,OLS expanded 25,prior_beat_rate_4q,0.021388409260746172
+future_5d_return,OLS expanded 25,days_since_previous_earnings,0.06033398288624615
+future_5d_return,OLS expanded 25,stock_return_60d_before,-0.1830138023528158
+future_5d_return,OLS expanded 25,stock_volatility_60d_before,-0.34991209172673476
+future_5d_return,OLS expanded 25,market_beta_60d_before,-0.014247314322331839
+future_5d_return,OLS expanded 25,sector_relative_return_20d_before,0.08699982551661856
+future_5d_return,OLS expanded 25,reaction_day_market_adjusted_return,0.6139673321669249
+future_5d_return,OLS expanded 25,reaction_day_sector_adjusted_return,-0.008672758182408372
+future_5d_return,OLS expanded 25,vix_prior_close,0.44106634165818326
+future_5d_return,OLS expanded 25,vix_change_5_sessions,0.03321636049904733
+future_5d_return,OLS expanded 25,vvix_prior_close,-0.062037054060685624
+future_5d_return,OLS expanded 25,treasury_10y_lag7d,-0.22505089326442396
+future_5d_return,OLS expanded 25,yield_curve_10y_minus_2y,-0.11903088639004672
+future_5d_return,OLS expanded 25,vix_reaction_interaction,-0.6545089726910382
+future_5d_return,OLS expanded 25,surprise_reaction_interaction,-0.002283482795394473
+future_5d_return,Ridge 25,earnings_surprise_pct,-0.04723232736806249
+future_5d_return,Ridge 25,reaction_day_return,-0.013749502006681945
+future_5d_return,Ridge 25,abnormal_volume,-0.03318462303999167
+future_5d_return,Ridge 25,return_5d_before,-0.024968951295297047
+future_5d_return,Ridge 25,return_20d_before,0.012203951826454982
+future_5d_return,Ridge 25,volatility_20d,0.25303618996470956
+future_5d_return,Ridge 25,spy_return_5d_before,0.048223916315863445
+future_5d_return,Ridge 25,previous_earnings_surprise_pct,-0.00862976358034846
+future_5d_return,Ridge 25,prior_surprise_mean_4q,0.07389735426229348
+future_5d_return,Ridge 25,prior_surprise_std_4q,0.033275869830050424
+future_5d_return,Ridge 25,prior_beat_rate_4q,0.022654492562591503
+future_5d_return,Ridge 25,days_since_previous_earnings,0.06039168021948457
+future_5d_return,Ridge 25,stock_return_60d_before,-0.16983380335815415
+future_5d_return,Ridge 25,stock_volatility_60d_before,-0.24002589564542262
+future_5d_return,Ridge 25,market_beta_60d_before,-0.02892798924713104
+future_5d_return,Ridge 25,sector_relative_return_20d_before,0.08142497208758182
+future_5d_return,Ridge 25,reaction_day_market_adjusted_return,0.27675859359549854
+future_5d_return,Ridge 25,reaction_day_sector_adjusted_return,0.15737698203447217
+future_5d_return,Ridge 25,vix_prior_close,0.37040599905457916
+future_5d_return,Ridge 25,vix_change_5_sessions,0.026632547960778456
+future_5d_return,Ridge 25,vvix_prior_close,-0.007135478197622411
+future_5d_return,Ridge 25,treasury_10y_lag7d,-0.18929922510113575
+future_5d_return,Ridge 25,yield_curve_10y_minus_2y,-0.1065694559878944
+future_5d_return,Ridge 25,vix_reaction_interaction,-0.5082519590763601
+future_5d_return,Ridge 25,surprise_reaction_interaction,-0.0025303014777946662
+future_5d_return,Clipped Ridge 25,earnings_surprise_pct,0.06118266251297849
+future_5d_return,Clipped Ridge 25,reaction_day_return,-0.10345531784539944
+future_5d_return,Clipped Ridge 25,abnormal_volume,-0.06357591003866203
+future_5d_return,Clipped Ridge 25,return_5d_before,0.006674186797855138
+future_5d_return,Clipped Ridge 25,return_20d_before,0.04146269412286208
+future_5d_return,Clipped Ridge 25,volatility_20d,0.16573158063335555
+future_5d_return,Clipped Ridge 25,spy_return_5d_before,-0.029861520222727762
+future_5d_return,Clipped Ridge 25,previous_earnings_surprise_pct,-0.038007537468058857
+future_5d_return,Clipped Ridge 25,prior_surprise_mean_4q,0.08391002576747322
+future_5d_return,Clipped Ridge 25,prior_surprise_std_4q,-0.029818381398487536
+future_5d_return,Clipped Ridge 25,prior_beat_rate_4q,0.00798515769876236
+future_5d_return,Clipped Ridge 25,days_since_previous_earnings,0.11418473057325344
+future_5d_return,Clipped Ridge 25,stock_return_60d_before,-0.1447680675657664
+future_5d_return,Clipped Ridge 25,stock_volatility_60d_before,-0.2108592691153655
+future_5d_return,Clipped Ridge 25,market_beta_60d_before,-0.004122509843640109
+future_5d_return,Clipped Ridge 25,sector_relative_return_20d_before,0.011107503942529445
+future_5d_return,Clipped Ridge 25,reaction_day_market_adjusted_return,0.2516259896683616
+future_5d_return,Clipped Ridge 25,reaction_day_sector_adjusted_return,0.1660164883764055
+future_5d_return,Clipped Ridge 25,vix_prior_close,0.39857765090020547
+future_5d_return,Clipped Ridge 25,vix_change_5_sessions,0.005575334479008187
+future_5d_return,Clipped Ridge 25,vvix_prior_close,-0.05321360481675832
+future_5d_return,Clipped Ridge 25,treasury_10y_lag7d,-0.19755056805785565
+future_5d_return,Clipped Ridge 25,yield_curve_10y_minus_2y,-0.12452041001173435
+future_5d_return,Clipped Ridge 25,vix_reaction_interaction,-0.3788384852477122
+future_5d_return,Clipped Ridge 25,surprise_reaction_interaction,0.030916612100764043
+market_adjusted_5d_return,OLS core 8,earnings_surprise_pct,-0.04086361518778672
+market_adjusted_5d_return,OLS core 8,reaction_day_return,-0.017579747789613163
+market_adjusted_5d_return,OLS core 8,abnormal_volume,-0.02781133311082682
+market_adjusted_5d_return,OLS core 8,return_5d_before,0.027508049930523207
+market_adjusted_5d_return,OLS core 8,return_20d_before,-0.11647759686883837
+market_adjusted_5d_return,OLS core 8,volatility_20d,0.1588856667029064
+market_adjusted_5d_return,OLS core 8,spy_return_5d_before,0.057168803100247814
+market_adjusted_5d_return,OLS core 8,previous_earnings_surprise_pct,0.010817470026705314
+market_adjusted_5d_return,OLS expanded 25,earnings_surprise_pct,-0.04019835417276884
+market_adjusted_5d_return,OLS expanded 25,reaction_day_return,0.3645785512613954
+market_adjusted_5d_return,OLS expanded 25,abnormal_volume,0.0006177803301751813
+market_adjusted_5d_return,OLS expanded 25,return_5d_before,-0.022383271938593977
+market_adjusted_5d_return,OLS expanded 25,return_20d_before,-0.1787606052000015
+market_adjusted_5d_return,OLS expanded 25,volatility_20d,0.2574217191471104
+market_adjusted_5d_return,OLS expanded 25,spy_return_5d_before,0.13301948195009825
+market_adjusted_5d_return,OLS expanded 25,previous_earnings_surprise_pct,-0.011044326073996394
+market_adjusted_5d_return,OLS expanded 25,prior_surprise_mean_4q,0.0461268447665207
+market_adjusted_5d_return,OLS expanded 25,prior_surprise_std_4q,0.04827950593301423
+market_adjusted_5d_return,OLS expanded 25,prior_beat_rate_4q,0.03703545154042393
+market_adjusted_5d_return,OLS expanded 25,days_since_previous_earnings,0.024910990617809714
+market_adjusted_5d_return,OLS expanded 25,stock_return_60d_before,-0.05618909234127898
+market_adjusted_5d_return,OLS expanded 25,stock_volatility_60d_before,-0.1449918710591893
+market_adjusted_5d_return,OLS expanded 25,market_beta_60d_before,-0.1157487329394887
+market_adjusted_5d_return,OLS expanded 25,sector_relative_return_20d_before,0.16968895993319616
+market_adjusted_5d_return,OLS expanded 25,reaction_day_market_adjusted_return,0.14843510685926453
+market_adjusted_5d_return,OLS expanded 25,reaction_day_sector_adjusted_return,-0.21953114879739477
+market_adjusted_5d_return,OLS expanded 25,vix_prior_close,0.11041582974218389
+market_adjusted_5d_return,OLS expanded 25,vix_change_5_sessions,-0.013249019509255819
+market_adjusted_5d_return,OLS expanded 25,vvix_prior_close,0.019229226828479315
+market_adjusted_5d_return,OLS expanded 25,treasury_10y_lag7d,0.03510143631068822
+market_adjusted_5d_return,OLS expanded 25,yield_curve_10y_minus_2y,-0.026113377944370107
+market_adjusted_5d_return,OLS expanded 25,vix_reaction_interaction,-0.3328940410805994
+market_adjusted_5d_return,OLS expanded 25,surprise_reaction_interaction,-0.014327979745843471
+market_adjusted_5d_return,Ridge 25,earnings_surprise_pct,-0.03873023172855485
+market_adjusted_5d_return,Ridge 25,reaction_day_return,0.14764631593131095
+market_adjusted_5d_return,Ridge 25,abnormal_volume,-0.0021609992576334413
+market_adjusted_5d_return,Ridge 25,return_5d_before,-0.012905456409547194
+market_adjusted_5d_return,Ridge 25,return_20d_before,-0.1443160554358604
+market_adjusted_5d_return,Ridge 25,volatility_20d,0.2145981661141319
+market_adjusted_5d_return,Ridge 25,spy_return_5d_before,0.10568871400862055
+market_adjusted_5d_return,Ridge 25,previous_earnings_surprise_pct,-0.009065237962132149
+market_adjusted_5d_return,Ridge 25,prior_surprise_mean_4q,0.04170867874438132
+market_adjusted_5d_return,Ridge 25,prior_surprise_std_4q,0.043959174940550405
+market_adjusted_5d_return,Ridge 25,prior_beat_rate_4q,0.0359180887604052
+market_adjusted_5d_return,Ridge 25,days_since_previous_earnings,0.02531941492981212
+market_adjusted_5d_return,Ridge 25,stock_return_60d_before,-0.056003483796275295
+market_adjusted_5d_return,Ridge 25,stock_volatility_60d_before,-0.104622420343388
+market_adjusted_5d_return,Ridge 25,market_beta_60d_before,-0.11023788781118124
+market_adjusted_5d_return,Ridge 25,sector_relative_return_20d_before,0.12937711497102503
+market_adjusted_5d_return,Ridge 25,reaction_day_market_adjusted_return,0.07030071707347864
+market_adjusted_5d_return,Ridge 25,reaction_day_sector_adjusted_return,-0.040574746028613044
+market_adjusted_5d_return,Ridge 25,vix_prior_close,0.09664817802728626
+market_adjusted_5d_return,Ridge 25,vix_change_5_sessions,-0.028346203558747042
+market_adjusted_5d_return,Ridge 25,vvix_prior_close,0.03344618828147759
+market_adjusted_5d_return,Ridge 25,treasury_10y_lag7d,0.042293761043063816
+market_adjusted_5d_return,Ridge 25,yield_curve_10y_minus_2y,-0.024084351487991804
+market_adjusted_5d_return,Ridge 25,vix_reaction_interaction,-0.20951220127960338
+market_adjusted_5d_return,Ridge 25,surprise_reaction_interaction,-0.013356485626196131
+market_adjusted_5d_return,Clipped Ridge 25,earnings_surprise_pct,0.04850127211883544
+market_adjusted_5d_return,Clipped Ridge 25,reaction_day_return,0.029787660140924127
+market_adjusted_5d_return,Clipped Ridge 25,abnormal_volume,-0.02832940533894023
+market_adjusted_5d_return,Clipped Ridge 25,return_5d_before,0.008868936672743459
+market_adjusted_5d_return,Clipped Ridge 25,return_20d_before,-0.11800824181286043
+market_adjusted_5d_return,Clipped Ridge 25,volatility_20d,0.1578651946339438
+market_adjusted_5d_return,Clipped Ridge 25,spy_return_5d_before,0.10611417094079688
+market_adjusted_5d_return,Clipped Ridge 25,previous_earnings_surprise_pct,-0.027020914202669888
+market_adjusted_5d_return,Clipped Ridge 25,prior_surprise_mean_4q,0.0370595408247044
+market_adjusted_5d_return,Clipped Ridge 25,prior_surprise_std_4q,0.006881792116526656
+market_adjusted_5d_return,Clipped Ridge 25,prior_beat_rate_4q,0.02978822948867297
+market_adjusted_5d_return,Clipped Ridge 25,days_since_previous_earnings,0.045178855418996716
+market_adjusted_5d_return,Clipped Ridge 25,stock_return_60d_before,-0.03977190346573856
+market_adjusted_5d_return,Clipped Ridge 25,stock_volatility_60d_before,-0.10266685044119743
+market_adjusted_5d_return,Clipped Ridge 25,market_beta_60d_before,-0.08921634167271549
+market_adjusted_5d_return,Clipped Ridge 25,sector_relative_return_20d_before,0.06909347841263452
+market_adjusted_5d_return,Clipped Ridge 25,reaction_day_market_adjusted_return,0.060878788309405386
+market_adjusted_5d_return,Clipped Ridge 25,reaction_day_sector_adjusted_return,-0.02324449863256693
+market_adjusted_5d_return,Clipped Ridge 25,vix_prior_close,0.09691686600582215
+market_adjusted_5d_return,Clipped Ridge 25,vix_change_5_sessions,0.0048904757109819175
+market_adjusted_5d_return,Clipped Ridge 25,vvix_prior_close,0.032041465840552084
+market_adjusted_5d_return,Clipped Ridge 25,treasury_10y_lag7d,0.0435425546419802
+market_adjusted_5d_return,Clipped Ridge 25,yield_curve_10y_minus_2y,-0.03322110729457202
+market_adjusted_5d_return,Clipped Ridge 25,vix_reaction_interaction,-0.0839160540399291
+market_adjusted_5d_return,Clipped Ridge 25,surprise_reaction_interaction,0.02674112468834184

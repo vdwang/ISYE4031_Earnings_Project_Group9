@@ -14,7 +14,10 @@ download the **[actual CSV](research/datasets/sp500_modeling_dataset.csv)**,
 or read the **[source and quality report](reports/SP500_DATASET.md)**.
 Build commands are in [research/README.md](research/README.md).
 The 400-event Milestone 2 report and 1,714-event pilot are retained as earlier
-snapshots; no S&P 500 model has been evaluated yet.
+snapshots. The larger-data models have now been evaluated: the core linear
+model improves raw-return RMSE slightly, while added complexity does not give
+consistent gains. See **[model results](reports/SP500_MODEL_RESULTS.md)** or
+the **[comparison graph](outputs/sp500_models/model_comparison.png)**.
 
 ## Earlier 27 company dataset
 

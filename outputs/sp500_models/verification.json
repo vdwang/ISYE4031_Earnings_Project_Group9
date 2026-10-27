@@ -1,0 +1,10 @@
+{
+  "heldout_regression_rows": 11664,
+  "heldout_classification_rows": 5832,
+  "metric_recalculation_errors": 0,
+  "unequal_evaluation_counts": 0,
+  "duplicate_exported_events": 0,
+  "observed_target_mismatches": 0,
+  "prediction_nonfinite_cells": 0,
+  "dataset_hash_mismatch": 0
+}

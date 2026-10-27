@@ -9,6 +9,27 @@ Open the **[S&P 500 guide](datasets/SP500_README.md)** or
 pilot below is retained separately. Read the
 [S&P 500 source/quality report](../reports/SP500_DATASET.md) before modeling.
 
+### Run the larger dataset models
+
+The completed [model report](../reports/SP500_MODEL_RESULTS.md) compares mean/zero
+forecasts, core/expanded OLS, raw/clipped Ridge, gradient boosting and logistic
+direction classification. Scaling and clipping use training data only, with
+purged rolling training folds for penalty selection. The already-inspected 2025
+period stays exploratory. The small core-OLS raw-return gain is not clearly
+separated from zero by the approximate monthly bootstrap diagnostic.
+
+```powershell
+.\.venv\Scripts\python.exe research\run_sp500_models.py
+.\.venv\Scripts\python.exe research\summarize_sp500_models.py
+```
+
+These commands use the committed CSV and root dependencies, with no API calls
+or raw caches required. Results, predictions, selected parameters, grouped
+diagnostics and graphs are in `outputs/sp500_models/`. The summary checks the
+saved forecasts against the reported regression/classification metrics and the
+locked dataset hash. Model outputs are separate from the construction-audit
+metadata under `outputs/dataset_research/sp500/`.
+
 ### Rebuild the S&P 500 panel
 
 ```powershell

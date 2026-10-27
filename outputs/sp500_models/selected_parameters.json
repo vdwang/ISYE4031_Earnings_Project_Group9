@@ -1,0 +1,18 @@
+{
+  "regression": {
+    "future_5d_return": {
+      "ridge_alpha": 1000.0,
+      "clipped_ridge_alpha": 1000.0,
+      "training_mean_fraction": 0.0028782758991051324
+    },
+    "market_adjusted_5d_return": {
+      "ridge_alpha": 1000.0,
+      "clipped_ridge_alpha": 1000.0,
+      "training_mean_fraction": 0.0008343595072686827
+    }
+  },
+  "classification": {
+    "C": 0.01,
+    "training_positive_fraction": 0.5376605039050435
+  }
+}

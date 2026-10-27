@@ -1,0 +1,12 @@
+[
+  {
+    "target": "future_5d_return",
+    "best_overall_validation_rmse": "OLS core 8",
+    "best_trained_validation_rmse": "OLS core 8"
+  },
+  {
+    "target": "market_adjusted_5d_return",
+    "best_overall_validation_rmse": "Zero",
+    "best_trained_validation_rmse": "OLS core 8"
+  }
+]

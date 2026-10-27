@@ -1,5 +1,8 @@
 # S&P 500 dataset expansion
 
+**Modeling update:** the completed [large-data model comparison](SP500_MODEL_RESULTS.md)
+is now available. This document records the dataset construction and its limits.
+
 The dataset research branch now provides **28,496 complete event rows from 495
 companies in the downloaded S&P 500 snapshot**, covering January 5, 2010 through
 December 19, 2025. There are 25 numeric predictors and 11 industry groups. The

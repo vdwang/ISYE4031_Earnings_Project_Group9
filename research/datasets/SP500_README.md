@@ -84,5 +84,8 @@ Exact release times, point-in-time estimate vintages and vendor corporate-action
 consistency remain unverified. All target calculations and specified lag rules
 were checked, but completeness does not establish error-free financial data.
 
-Build instructions are in [research/README.md](../README.md). No new model has
-been fitted on this dataset and no performance improvement is claimed yet.
+Build and modeling instructions are in [research/README.md](../README.md).
+The larger dataset has now been modeled: see
+[model results](../../reports/SP500_MODEL_RESULTS.md). Core OLS gives a small
+raw-return error reduction; the extra predictors and more complex model do not
+give consistent gains. The approximate uncertainty diagnostics include zero.
