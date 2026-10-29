@@ -1,0 +1,10 @@
+{
+  "training_events": 22551,
+  "design_rank": 8,
+  "design_columns": 8,
+  "standardized_condition_number": 1.6777636656266024,
+  "marginal_residual_mean": 7.877064606448718e-20,
+  "marginal_residual_sd": 0.040719398575334007,
+  "covariance": "Two-way clustered by company and reaction date",
+  "no_pooled_acf": "Events are irregular within companies; concatenating companies would create false time adjacency"
+}

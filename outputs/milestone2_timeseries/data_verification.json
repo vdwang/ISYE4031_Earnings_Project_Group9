@@ -1,0 +1,16 @@
+{
+  "daily_rows_checked": 1846178,
+  "daily_duplicate_keys": 0,
+  "daily_nonfinite_cells": 0,
+  "daily_target_errors": 0,
+  "daily_date_errors": 0,
+  "daily_lag_errors": 0,
+  "calendar_value_errors": 0,
+  "calendar_availability_errors": 0,
+  "split_errors": 0,
+  "event_target_errors": 0,
+  "event_lag_errors": 0,
+  "event_availability_errors": 0,
+  "event_rows_checked": 28368,
+  "event_row_coverage_errors": 0
+}

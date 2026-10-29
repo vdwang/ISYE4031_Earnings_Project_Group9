@@ -1,0 +1,20 @@
+{
+  "features": [
+    "completed_event_return_lag1",
+    "completed_event_return_lag4"
+  ],
+  "training_means": [
+    0.0024506004982149444,
+    0.0027720268279179316
+  ],
+  "training_scales": [
+    0.04052480113878409,
+    0.04218306886682997
+  ],
+  "coefficients": [
+    0.0028995708012862307,
+    0.001374642387571062,
+    -6.451246550764072e-05
+  ],
+  "covariance": "two-way clustered by company and prediction date"
+}

@@ -1,0 +1,13 @@
+analysis,split,model,n,mae_pp,rmse_pp,direction_accuracy
+earnings_event_five_sessions,train,Training mean,22551,2.8940742230292638,4.084344550132345,0.5379362334264556
+earnings_event_five_sessions,train,Zero,22551,2.9049502206515387,4.094623976937626,0.4620637665735444
+earnings_event_five_sessions,train,Event autoregression,22551,2.8926350107869747,4.082024626521738,0.5386457363309831
+earnings_event_five_sessions,train,Event ARX quarter year,22551,2.8887238258278023,4.07184957362138,0.5346104385614828
+earnings_event_five_sessions,validation,Training mean,3869,2.9904853107764993,4.23458664575568,0.5404497286120444
+earnings_event_five_sessions,validation,Zero,3869,3.002270483550647,4.261091601721976,0.45955027138795557
+earnings_event_five_sessions,validation,Event autoregression,3869,2.990793855732176,4.234082804018482,0.5458774877229258
+earnings_event_five_sessions,validation,Event ARX quarter year,3869,3.013967618133745,4.265498988188917,0.5295942103902818
+earnings_event_five_sessions,exploratory_test,Training mean,1947,3.3038997511255053,4.637290736707173,0.5526450950179764
+earnings_event_five_sessions,exploratory_test,Zero,1947,3.323482727547878,4.656722343627689,0.4473549049820236
+earnings_event_five_sessions,exploratory_test,Event autoregression,1947,3.313691473549766,4.655252422652775,0.5480225988700564
+earnings_event_five_sessions,exploratory_test,Event ARX quarter year,1947,3.290326734697592,4.603479030125103,0.554185927067283

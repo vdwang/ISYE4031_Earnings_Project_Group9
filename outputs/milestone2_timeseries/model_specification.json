@@ -1,0 +1,42 @@
+{
+  "daily_target": "Next observed stock-session return",
+  "daily_features": [
+    "return_lag1",
+    "return_lag2",
+    "return_lag5",
+    "quarter_return_lag1",
+    "quarter_return_lag4",
+    "year_return_lag1",
+    "spy_return_known"
+  ],
+  "event_target": "Five-session stock return after earnings reaction close",
+  "event_features": [
+    "completed_event_return_lag1",
+    "completed_event_return_lag4",
+    "quarter_return_lag1",
+    "quarter_return_lag4",
+    "year_return_lag1",
+    "earnings_surprise_pct",
+    "reaction_day_return"
+  ],
+  "fit_window": "2010-2022",
+  "validation": "2023-2024",
+  "exploratory_test": "2025",
+  "daily_models": [
+    "Zero",
+    "Training mean",
+    "Pooled AR lags 1 2 5",
+    "Pooled ARX with quarter year",
+    "AAPL AutoReg ARX"
+  ],
+  "aapl_selection": "AAPL fixed before model results; illustrative single-series diagnostics, not best-company selection",
+  "forecast_mode": "Fixed training coefficients, rolling one-step forecasts using actually observed earlier returns",
+  "no_tuning": "Lags and predictors fixed from professor notes; no holdout parameter search",
+  "versions": {
+    "statsmodels": "0.15.0",
+    "pandas": "2.3.3",
+    "numpy": "2.5.3",
+    "pyarrow": "24.0.0",
+    "scikit-learn": "1.9.1"
+  }
+}

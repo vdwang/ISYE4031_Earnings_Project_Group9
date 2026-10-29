@@ -1,0 +1,32 @@
+{
+  "daily_candidate_stock_days": 1877686,
+  "daily_complete_stock_days": 1846178,
+  "daily_companies": 492,
+  "daily_first_date": "2010-01-04",
+  "daily_last_date": "2025-12-31",
+  "daily_storage_bytes": 68214191,
+  "daily_predictors": [
+    "return_lag1",
+    "return_lag2",
+    "return_lag5",
+    "quarter_return_lag1",
+    "quarter_return_lag4",
+    "year_return_lag1",
+    "spy_return_known"
+  ],
+  "event_rows_preserved": 28496,
+  "event_complete_time_series_rows": 28368,
+  "event_predictors": [
+    "completed_event_return_lag1",
+    "completed_event_return_lag4",
+    "quarter_return_lag1",
+    "quarter_return_lag4",
+    "year_return_lag1",
+    "earnings_surprise_pct",
+    "reaction_day_return"
+  ],
+  "warmup": "2008-2009 used only for historical features; no pre-2010 training rows",
+  "grain": "Daily stock-days and earnings announcements are separate observation types",
+  "event_dataset_sha256": "f21fd31e5b501da1bfa726dbc367ac22c0826a1df44fa305dda9ad0acb198231",
+  "models_fitted_during_data_build": false
+}

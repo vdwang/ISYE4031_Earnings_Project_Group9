@@ -1,0 +1,16 @@
+{
+  "n_training_residuals": 3266,
+  "autoreg_manual_prediction_max_error": 0.0,
+  "jarque_bera": 2984.1760426002656,
+  "jarque_bera_p": 0.0,
+  "skewness": -0.09917993671796745,
+  "kurtosis": 7.678641614186626,
+  "durbin_watson": 1.9950758981066201,
+  "breusch_pagan_lm": 97.34188586478153,
+  "breusch_pagan_p": 3.814959859055666e-18,
+  "arch_lm": 245.0682254939463,
+  "arch_p": 6.282981533187666e-51,
+  "covariance": "HAC with five lags",
+  "acf_and_ljung_box_scope": "AAPL only; no cross-company concatenation",
+  "ljung_box_model_df": 3
+}

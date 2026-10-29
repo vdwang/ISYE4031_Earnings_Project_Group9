@@ -20,7 +20,7 @@ PRIVATE = ROOT / "data/processed/research"
 DATA = ROOT / "research/datasets/sp500_modeling_dataset.csv"
 
 
-def choose_earnings():
+def choose_earnings(start_date="2010-01-01", end_date="2025-12-31"):
     alias = pd.read_csv(OUT / "issuer_aliases.csv").set_index("source_symbol").canonical_ticker.to_dict()
     hf = pd.read_parquet(CACHE / "hf_earnings.parquet").rename(columns={"symbol": "source_symbol", "eps_estimate": "estimated_eps"})
     # The archive's fixed EST timestamps are used only as dates, never as verified release times.
@@ -85,7 +85,7 @@ def choose_earnings():
     audit.append({"variable": "derived_surprise_percentage_points", "same_date_overlaps": len(comparable),
         "difference_over_0_01": int(delta.gt(.01).sum()), "difference_over_5_points": int(delta.gt(5).sum())})
     pd.DataFrame(audit).to_csv(OUT / "source_overlap_audit.csv", index=False)
-    return chosen.loc[chosen.reported_date.between("2010-01-01", "2025-12-31")].copy()
+    return chosen.loc[chosen.reported_date.between(start_date, end_date)].copy()
 
 
 def main():

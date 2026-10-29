@@ -1,0 +1,9 @@
+{
+  "training_observations": 1477215,
+  "r_squared": 0.0042397303548559195,
+  "adjusted_r_squared": 0.0042350117731760895,
+  "design_rank": 8,
+  "design_columns": 8,
+  "standardized_condition_number": 1.9452459788151195,
+  "nonfinite_cluster_standard_errors": 0
+}

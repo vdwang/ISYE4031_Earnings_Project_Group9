@@ -1,0 +1,7 @@
+{
+  "stored_predictors": "float32",
+  "target_storage": "float64",
+  "predictor_absolute_tolerance": 1e-07,
+  "predictor_relative_tolerance": 1e-07,
+  "max_calendar_rounding_error_fraction": 2.2440560520919917e-07
+}

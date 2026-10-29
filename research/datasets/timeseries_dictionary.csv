@@ -1,0 +1,44 @@
+dataset,column,role,units,definition
+daily,date,metadata,date or text or boolean,Identifier or descriptive metadata; not a default predictor
+daily,return_lag1,predictor,fraction,Just-observed stock return; lag 1 relative to next-session target
+daily,return_lag2,predictor,fraction,Stock return observed one session before prediction
+daily,return_lag5,predictor,fraction,Stock return observed four sessions before prediction
+daily,spy_return_known,predictor,fraction,SPY return known at prediction-day close
+daily,quarter_return_lag1,predictor,fraction,Return over the immediately preceding completed calendar quarter
+daily,quarter_return_lag1_source_date,metadata,date or text or boolean,Availability date of the named historical feature
+daily,quarter_return_lag4,predictor,fraction,Return over the same calendar quarter of the prior year
+daily,quarter_return_lag4_source_date,metadata,date or text or boolean,Availability date of the named historical feature
+daily,year_return_lag1,predictor,fraction,Return over the preceding completed calendar year
+daily,year_return_lag1_source_date,metadata,date or text or boolean,Availability date of the named historical feature
+daily,future_return_1d,target_never_predictor,fraction,Next observed stock-session return; daily target
+daily,future_return_5d,target_never_predictor,fraction,Five-session future return; stored separately from the one-day target
+daily,target_end_date_1d,metadata,date or text or boolean,Target endpoint; never a predictor
+daily,target_end_date_5d,metadata,date or text or boolean,Target endpoint; never a predictor
+daily,ticker,metadata,date or text or boolean,Identifier or descriptive metadata; not a default predictor
+daily,cik,metadata,date or text or boolean,Identifier or descriptive metadata; not a default predictor
+daily,analysis_split_1d,metadata,date or text or boolean,Chronological split with one-day label-boundary purging
+daily,analysis_split_5d,metadata,date or text or boolean,Chronological split with five-day label-boundary purging
+daily,earnings_reaction_day,metadata,date or text or boolean,Matches a reaction day in the original 28496-event snapshot; not a model predictor
+event,event_id,metadata,date or text or boolean,Identifier or descriptive metadata; not a default predictor
+event,ticker,metadata,date or text or boolean,Identifier or descriptive metadata; not a default predictor
+event,cik,metadata,date or text or boolean,Identifier or descriptive metadata; not a default predictor
+event,sector,metadata,date or text or boolean,Identifier or descriptive metadata; not a default predictor
+event,reported_date,metadata,date or text or boolean,Identifier or descriptive metadata; not a default predictor
+event,reaction_day,metadata,date or text or boolean,Identifier or descriptive metadata; not a default predictor
+event,prediction_end_date,metadata,date or text or boolean,Identifier or descriptive metadata; not a default predictor
+event,analysis_split,metadata,date or text or boolean,Original event split with five-session label-boundary purging
+event,earnings_source,metadata,date or text or boolean,Identifier or descriptive metadata; not a default predictor
+event,completed_event_return_lag1,predictor,fraction,Most recent completed earnings-event five-session return available by prediction close
+event,completed_event_return_lag4,predictor,fraction,Fourth most recent completed event return; not necessarily the same fiscal quarter last year
+event,quarter_return_lag1,predictor,fraction,Return over the immediately preceding completed calendar quarter
+event,quarter_return_lag4,predictor,fraction,Return over the same calendar quarter of the prior year
+event,year_return_lag1,predictor,fraction,Return over the preceding completed calendar year
+event,earnings_surprise_pct,predictor,percent,Current announced EPS surprise percentage from the earlier curated event table
+event,reaction_day_return,predictor,fraction,"Stock return on the reaction day, known by its close"
+event,quarter_return_lag1_source_date,metadata,date or text or boolean,Availability date of the named historical feature
+event,quarter_return_lag4_source_date,metadata,date or text or boolean,Availability date of the named historical feature
+event,year_return_lag1_source_date,metadata,date or text or boolean,Availability date of the named historical feature
+event,event_lag1_source_date,metadata,date or text or boolean,Availability date of the named historical feature
+event,event_lag4_source_date,metadata,date or text or boolean,Availability date of the named historical feature
+event,future_5d_return,target_never_predictor,fraction,Five-session return after earnings reaction; event target
+event,model_complete,metadata,date or text or boolean,All required event time-series predictors and target are present

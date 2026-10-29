@@ -1,5 +1,20 @@
 # ISYE 4031 post-earnings returns project
 
+## Milestone 2 basic time series branch
+
+The October 29 professor notes are implemented on `codex/milestone2-time-series`:
+**1,846,178 daily stock observations from 492 companies during 2010–2025**, plus
+the preserved **28,496 earnings events**. Basic AR-X models use actual past
+quarter/year returns and lagged returns, with Q–Q, residual and ACF diagnostics.
+Daily stock-days and earnings announcements remain separate units of observation.
+
+Start with the **[Milestone 2 time-series report](reports/MILESTONE2_TIMESERIES.md)**
+and **[new data guide](research/datasets/TIMESERIES_README.md)**. Install
+`requirements-timeseries.txt`, then run `python run_milestone2_timeseries.py --fit-only`
+to fit directly from the committed datasets. This makes no API calls. The
+default command rebuilds from local raw caches, verifies and fits. The original
+400-event scripts and previous research snapshots remain available below.
+
 ## S&P 500 dataset with more than 10000 events
 
 The current research dataset has **28,496 complete events from 495 companies**,
