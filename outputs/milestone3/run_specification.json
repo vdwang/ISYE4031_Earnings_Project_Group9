@@ -1,0 +1,50 @@
+{
+  "input": "research/datasets/timeseries_events.csv",
+  "sha256": "f21fd31e5b501da1bfa726dbc367ac22c0826a1df44fa305dda9ad0acb198231",
+  "initial_fit_rows": 22551,
+  "evaluated_rows": 5816,
+  "issuer_count": 492,
+  "eval_issuers_unseen_at_initial_fit": 11,
+  "excluded_incomplete_rows": 128,
+  "boundary_rows_unscored": 1,
+  "max_pp_difference_vs_milestone2_frozen_forecasts": 4.808600184702527e-10,
+  "origin": "2023-01-01",
+  "features": [
+    "completed_event_return_lag1",
+    "completed_event_return_lag4",
+    "quarter_return_lag1",
+    "quarter_return_lag4",
+    "year_return_lag1",
+    "earnings_surprise_pct",
+    "reaction_day_return"
+  ],
+  "selected_finite_memory_days": 730.0,
+  "frozen_coefficients_pp_per_training_sd": {
+    "intercept": 0.28995708012862315,
+    "completed_event_return_lag1": 0.15777954678944808,
+    "completed_event_return_lag4": 0.05945542257641754,
+    "quarter_return_lag1": -0.10111739583949944,
+    "quarter_return_lag4": -0.29821755508010617,
+    "year_return_lag1": 0.09703803750955757,
+    "earnings_surprise_pct": -0.04331541913603633,
+    "reaction_day_return": -0.05179571734829535
+  },
+  "neural_hidden_width": 8,
+  "neural_l2": 0.001,
+  "neural_seeds": [
+    17,
+    29,
+    53
+  ],
+  "bootstrap_seed": 4031,
+  "bootstrap_draws": 2000,
+  "python": "3.13.5",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "threadpoolctl": "3.7.0"
+  }
+}

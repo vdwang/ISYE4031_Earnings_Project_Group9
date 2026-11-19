@@ -1,0 +1,13 @@
+seed,split,model,n,mae_pp,rmse_pp,forecast_sd_pp
+17,exploratory_test,Pooled neural net,1947,3.287900529,4.593064281,0.387452194
+17,exploratory_test,Mixed neural net,1947,3.289668359,4.595149354,0.3921064341
+17,validation,Pooled neural net,3869,3.017366839,4.269264857,0.3826165199
+17,validation,Mixed neural net,3869,3.017258907,4.269180562,0.3839237654
+29,exploratory_test,Pooled neural net,1947,3.289661129,4.595107886,0.3919876956
+29,exploratory_test,Mixed neural net,1947,3.291350852,4.600968117,0.3906025971
+29,validation,Pooled neural net,3869,3.017286803,4.269189463,0.3839198045
+29,validation,Mixed neural net,3869,3.017525734,4.269108669,0.3901540583
+53,exploratory_test,Pooled neural net,1947,3.290376242,4.597571496,0.38362131
+53,exploratory_test,Mixed neural net,1947,3.287843329,4.592302819,0.3869829899
+53,validation,Pooled neural net,3869,3.016897566,4.268090224,0.3793450556
+53,validation,Mixed neural net,3869,3.017909326,4.269896717,0.3836028168

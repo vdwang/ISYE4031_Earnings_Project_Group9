@@ -1,5 +1,7 @@
 # ISYE 4031 post-earnings returns project
 
+**Milestone 3 Check-in 2** · [Working report, code, results, and TA materials](MILESTONE3_README.md).
+
 ## Milestone 2 basic time series branch
 
 The October 29 professor notes are implemented on `codex/milestone2-time-series`:
